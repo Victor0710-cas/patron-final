@@ -71,7 +71,7 @@
     <h2>Our Products</h2>
    <!-- Product 1 -->
    <div class="product-item">
-    <img src="images/barber_cap.jpg" alt="Barber Cap" class="product-image">
+    <img src="images/barber cap product.jpeg" alt="Barber Cap" class="product-image">
     <h3>Barber Cap</h3>
     <p style="color: black;">Keep your style fresh and your hair in check with our premium Barber Cap. Designed for comfort and style.</p>
     <div class="star-rating">★★★★★</div>
@@ -80,7 +80,7 @@
 
   <!-- Product 2 -->
   <div class="product-item">
-    <img src="images/trimpro4x.jpg" alt="Trimpro4X" class="product-image">
+    <img src="images/beard trimmer.jpeg" alt="Trimpro4X" class="product-image">
     <h3>Trimpro4X</h3>
     <p style="color: black;">Achieve precision trimming with the advanced Trimpro4X. Built for perfection and durability.</p>
     <div class="star-rating">★★★★★</div>
@@ -89,7 +89,7 @@
 
   <!-- Product 3 -->
   <div class="product-item">
-    <img src="images/uncs_oil.jpg" alt="Uncs Oil" class="product-image">
+    <img src="images/oil.jpeg" alt="Uncs Oil" class="product-image">
     <h3>Uncs Oil</h3>
     <p style="color: black;">Nourish and soften your beard with our premium Uncs Oil, crafted from natural ingredients.</p>
     <div class="star-rating">★★★★★</div>
@@ -98,7 +98,7 @@
 
   <!-- Product 4 -->
   <div class="product-item">
-    <img src="images/precisionpro.jpg" alt="PrecisionPro" class="product-image">
+    <img src="images/precision pro.jpeg" alt="PrecisionPro" class="product-image">
     <h3>PrecisionPro</h3>
     <p style="color: black;">Get professional-grade accuracy with the PrecisionPro, perfect for all your grooming needs.</p>
     <div class="star-rating">★★★★★</div>
@@ -107,7 +107,7 @@
 
   <!-- Product 5 -->
   <div class="product-item">
-    <img src="images/steamsoft_towel.jpg" alt="SteamSoft Towel" class="product-image">
+    <img src="images/towel.jpeg" alt="SteamSoft Towel" class="product-image">
     <h3>SteamSoft Towel</h3>
     <p style="color: black;">Relax and rejuvenate with the SteamSoft Towel, designed to give you that fresh, warm finish.</p>
     <div class="star-rating">★★★★★</div>
