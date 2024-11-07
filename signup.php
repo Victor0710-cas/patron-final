@@ -29,7 +29,7 @@
   <div class="main-block">
     <div class="left-part">
       <i class="fas fa-graduation-cap"></i>
-      <h1>Signup for a BarberCap Account</h1>
+      <h1>Signup for a Patron Account</h1>
       <p>Choose from an individual, commercial, or partnership account</p>
       <div class="btn-group">
         <a class="btn-item" href="https://www.w3docs.com/learn-html.html">Login</a>
