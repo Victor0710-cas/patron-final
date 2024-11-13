@@ -49,9 +49,9 @@
     <div class="logo">Patron</div>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="buy.html" class="book-btn">Buy Now</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="contact.php">Contact</a></li>
+        <li><a href="buy.php" class="book-btn">Buy Now</a></li>
       </ul>
     </nav>
   </header>
@@ -114,12 +114,11 @@
         </select>
       </div>
       <div class="checkbox">
-        <input type="checkbox" name="checkbox"><span>I agree to the <a href="policy.html">Privacy Poalicy for Patron
+        <input type="checkbox" name="checkbox"><span>I agree to the <a href="policy.php">Privacy Poalicy for Patron
             BarberCap.</a></span>
       </div>
       <button type="submit" name="signup-submit">Submit</button>
     </form>
   </div>
 </body>
-
 </html>
