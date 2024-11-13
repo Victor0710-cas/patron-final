@@ -49,7 +49,7 @@
     <div class="logo">Patron</div>
     <nav>
       <ul>
-        <li><a href="index.php">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="contact.php">Contact</a></li>
         <li><a href="buy.php" class="book-btn">Buy Now</a></li>
       </ul>
