@@ -49,3 +49,15 @@ function hideReview(element) {
   reviewPopup.style.opacity = '0';
   reviewPopup.style.visibility = 'hidden';
 }
+
+document.querySelectorAll('.service-item').forEach((item) => {
+  item.addEventListener('mouseover', () => {
+      const popup = item.querySelector('.review-popup');
+      popup.style.display = 'block';
+  });
+
+  item.addEventListener('mouseout', () => {
+      const popup = item.querySelector('.review-popup');
+      popup.style.display = 'none';
+  });
+});

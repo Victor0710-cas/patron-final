@@ -526,3 +526,149 @@ body, div, form, input, select, p {
   opacity: 1;
   visibility: visible;
 }
+
+.review-popup {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 200px;
+  top: 50px; /* Adjusted to position under image */
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.service-item {
+  position: relative;
+}
+
+.service-rating {
+  color: #000000; /* Change this to any darker color, such as #333 or #000 */
+  font-size: 1.2em; /* Optional: Adjust size to make it more prominent */
+  font-weight: bold; /* Optional: Makes the stars thicker if desired */
+}
+
+/* General styling */
+#services {
+  padding: 20px;
+  max-width: 1200px; /* Adjust to fit within your desired width */
+  margin: auto;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three products per row */
+  gap: 20px; /* Space between items */
+}
+
+.service-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-image {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.service-rating {
+  color: #333;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.buy-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buy-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .service-list {
+      grid-template-columns: repeat(2, 1fr); /* Two items per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .service-list {
+      grid-template-columns: 1fr; /* One item per row on small screens */
+  }
+}
+
+/* General styling */
+#services {
+  padding: 20px;
+  max-width: 1200px; /* Adjust to fit within your desired width */
+  margin: auto;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three products per row */
+  gap: 20px; /* Space between items */
+}
+
+.service-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-image {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.service-rating {
+  color: #333;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.buy-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buy-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .service-list {
+      grid-template-columns: repeat(2, 1fr); /* Two items per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .service-list {
+      grid-template-columns: 1fr; /* One item per row on small screens */
+  }
+}

@@ -6,6 +6,7 @@
   <title>Patron Men's Grooming</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="images/short-logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   
 </head>
@@ -14,20 +15,14 @@
    color: black;
   }
   </style>
+
 <body>
-  <header>
-    <div class="logo">Patron</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="buy.html" class="book-btn">Buy Now</a></li>
-      </ul>
-    </nav>
-  </header>
+  <?php
+include_once 'nav.php';
+?>
 
   <section id="hero">
-    <div class="hero-content">
+    <div class="hero-content container-fluid">
       <h1>Patron Presents...</h1>
       <h2 style="color: white;">Barber Cap</h2>
       <p>Say goodbye to bad hair days</p>
@@ -67,29 +62,63 @@
     </div>
   </section>
 
-  
   <section id="services">
     <h2>Our Products</h2>
     <div class="service-list">
-      <div class="service-item" onmouseover="showReview(this)" onmouseout="hideReview(this)">
-        <img src="images/barber cap product.jpeg" alt="Barber Cap" class="service-image">
-        <h3>Premium Barber Cap</h3>
-        <p>Stylish and effective cap for seamless grooming.</p>
-        <div class="service-rating">★★★★★</div>
-        <button class="buy-btn">Buy Now</button>
-        <!-- Review Popup -->
-        <div class="review-popup">"Absolutely love this cap! High quality and stylish." - John D.</div>
-      </div>
-      <!-- Add similar structures for each product with unique reviews -->
-    </div>
-  </section>
-  
-  
+        <div class="service-item">
+            <img src="images/barber cap product.jpeg" alt="Barber Cap" class="service-image">
+            <h3>Premium Barber Cap</h3>
+            <p>Stylish and effective cap for seamless grooming.</p>
+            <div class="service-rating">★★★★★</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
 
-    </div>
-  </section>
-  
+        <div class="service-item">
+            <img src="images/beard trimmer.jpeg" alt="Barber Cap" class="service-image">
+            <h3>Standard Barber Cap</h3>
+            <p>Affordable yet high quality for your daily needs.</p>
+            <div class="service-rating">★★★★☆</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
 
+        <div class="service-item">
+            <img src="images/oil.jpeg" alt="Barber Cap" class="service-image">
+            <h3>Eco Barber Cap</h3>
+            <p>Eco-friendly materials for sustainable grooming.</p>
+            <div class="service-rating">★★★★★</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        
+        <div class="service-list">
+        <div class="service-item">
+            <img src="images/precision pro.jpeg" alt="Barber Cap" class="service-image">
+            <h3>Premium Barber Cap</h3>
+            <p>Stylish and effective cap for seamless grooming.</p>
+            <div class="service-rating">★★★★★</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="service-item">
+            <img src="images/towel.jpeg" alt="Barber Cap" class="service-image">
+            <h3>Standard Barber Cap</h3>
+            <p>Affordable yet high quality for your daily needs.</p>
+            <div class="service-rating">★★★★☆</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="service-item">
+            <img src="images/oil.jpeg" alt="Barber Cap" class="service-image">
+            <h3>Eco Barber Cap</h3>
+            <p>Eco-friendly materials for sustainable grooming.</p>
+            <div class="service-rating">★★★★★</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <!-- Add more products as needed -->
+    </div>
+</section>
+
+ 
+  
 
   <section id="gallery">
     <h2><strong>Gallery</strong></h2>
@@ -144,7 +173,7 @@
   <footer>
     <p>© 2024 Patron Men's Grooming. All rights reserved.</p>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
 </html>
