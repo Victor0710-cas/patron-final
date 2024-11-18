@@ -5,11 +5,15 @@
 </head>
 <body>
   <nav>
-    <div class="logo">
+    <!-- Logo and Company Name Container -->
+    <div class="logo-container logo">
       <img src="images/black-short.png" alt="logo" id="logo-img">
     </div>
+
     <div class="menu-icon">
       <i class="fa fa-bars fa-2x"></i>
+      
+
     </div>
     <ul>
       <li><a href="index.php">home</a></li>
@@ -25,12 +29,9 @@
   <script>
     $(window).on('scroll', function() {
       if ($(window).scrollTop()) {
-        // When the user scrolls, add the 'black' class to the nav
         $('nav').addClass('black');
-        // Change the logo image when navbar has the 'black' class
         $('#logo-img').attr('src', 'images/white-short.png');
       } else {
-        // Remove the 'black' class and revert the logo to its original image
         $('nav').removeClass('black');
         $('#logo-img').attr('src', 'images/black-short.png');
       }

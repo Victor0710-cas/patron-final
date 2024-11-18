@@ -36,7 +36,9 @@ u7. <!DOCTYPE html>
     </style>
 </head>
 <body>
-
+<?php
+include_once 'nav.php';
+?>
 <div class="container">
     <h1>BarberCap Terms of Service</h1>
 

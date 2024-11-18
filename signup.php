@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Patron Men's Grooming</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
   <link rel="icon" type="image/x-icon" href="images/short-logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -16,6 +17,7 @@
     /* Centers the image */
     filter: blur(0px);
     /* Adjust the blur amount as desired */
+  }
 
     .signup-message {
     font-family: 'Montserrat', sans-serif;
@@ -41,19 +43,27 @@
     border: 1px solid #f5c6cb;
 }
 
-  }
+  
 </style>
 
 <body class="signup">
   <header>
-    <div class="logo">Patron</div>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.php">Contact</a></li>
-        <li><a href="buy.php" class="book-btn">Buy Now</a></li>
-      </ul>
-    </nav>
+  <div class="logo">
+      <img src="images/white-short.png" alt="logo" id="logo-img">
+    </div>
+    <div class="menu-icon">
+      <i class="fa fa-bars fa-2x"></i>
+    </div>
+    <ul>
+      <li><a href="index.php">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="contact.php">contact</a></li>
+      <li><a href="buy.php">buy</a></li>
+      <li><a href="login.php">log in</a></li>
+      <li><a href="signup.php">sign up</a></li>
+    </ul>
+  </nav>
   </header>
   <div class="main-block">
     <div class="left-part">
@@ -120,5 +130,19 @@
       <button type="submit" name="signup-submit">Submit</button>
     </form>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(window).on('scroll', function() {
+      if ($(wintdow).scrollTop()) {
+        // When he user scrolls, add the 'black' class to the nav
+        $('nav').addClass('black');
+        // Change the logo image when navbar has the 'black' class
+        $('#logo-img').attr('src', 'images/white-short.png');
+      } else {
+        // Remove the 'black' class and revert the logo to its original image
+        $('nav').removeClass('black');
+        $('#logo-img').attr('src', 'images/black-short.png');
+      }
+    });
 </body>
 </html>

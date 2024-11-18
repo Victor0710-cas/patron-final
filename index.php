@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Patron Men's Grooming</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="images/short-logo.png">
+  <link rel="icon" type="image/x-icon" href="images/black-short.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   
@@ -63,55 +63,33 @@ include_once 'nav.php';
   </section>
 
   <section id="services">
-    <h2>Our Products</h2>
+    <h2>Our Best Selling Products</h2>
     <div class="service-list">
         <div class="service-item">
             <img src="images/barber cap product.jpeg" alt="Barber Cap" class="service-image">
-            <h3>Premium Barber Cap</h3>
-            <p>Stylish and effective cap for seamless grooming.</p>
+            <h3> Barber Cap</h3>
+            <p>The cap that delivers precision haircuts effortlessly.</p>
             <div class="service-rating">★★★★★</div>
             <button class="buy-btn">Buy Now</button>
         </div>
 
         <div class="service-item">
-            <img src="images/beard trimmer.jpeg" alt="Barber Cap" class="service-image">
-            <h3>Standard Barber Cap</h3>
-            <p>Affordable yet high quality for your daily needs.</p>
-            <div class="service-rating">★★★★☆</div>
+            <img src="images/beard trimmer.jpeg" alt="Barber Cap" class="service-image"> 
+            <h3>TrimPro4X</h3>
+            <p>Stay sharp, stay clean with the TrimPro4X.</p>
+            <div class="service-rating">★★★★★</div>
             <button class="buy-btn">Buy Now</button>
         </div>
 
         <div class="service-item">
-            <img src="images/oil.jpeg" alt="Barber Cap" class="service-image">
-            <h3>Eco Barber Cap</h3>
-            <p>Eco-friendly materials for sustainable grooming.</p>
+            <img src="images/nose trimmer.jpeg" alt="Barber Cap" class="service-image">
+            <h3>LuxeTrim Duo</h3>
+            <p>Gentle yet powerful- perfect for nose and ears.</p>
             <div class="service-rating">★★★★★</div>
             <button class="buy-btn">Buy Now</button>
         </div>
         
-        <div class="service-list">
-        <div class="service-item">
-            <img src="images/precision pro.jpeg" alt="Barber Cap" class="service-image">
-            <h3>Premium Barber Cap</h3>
-            <p>Stylish and effective cap for seamless grooming.</p>
-            <div class="service-rating">★★★★★</div>
-            <button class="buy-btn">Buy Now</button>
-        </div>
-
-        <div class="service-item">
-            <img src="images/towel.jpeg" alt="Barber Cap" class="service-image">
-            <h3>Standard Barber Cap</h3>
-            <p>Affordable yet high quality for your daily needs.</p>
-            <div class="service-rating">★★★★☆</div>
-            <button class="buy-btn">Buy Now</button>
-        </div>
-
-        <div class="service-item">
-            <img src="images/oil.jpeg" alt="Barber Cap" class="service-image">
-            <h3>Eco Barber Cap</h3>
-            <p>Eco-friendly materials for sustainable grooming.</p>
-            <div class="service-rating">★★★★★</div>
-            <button class="buy-btn">Buy Now</button>
+   
         </div>
         <!-- Add more products as needed -->
     </div>
@@ -163,12 +141,33 @@ include_once 'nav.php';
     </div>
   </section>
 
+          <h2>LOCATION</h2>
+          <h3>Patron isn’t just a Mens Grooming company —it’s a cornerstone of the Jackson community.
+             We provide an exceptional grooming experience tailored to exceed your highest expectations.
+
+Buy with us today and enjoy a wide range of premium services, designed exclusively for you—the distinguished gentleman. </h3>
   <section id="location">
+  <style>
+    #map-container {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+   
+    
+    #map iframe {
+      width: 100%;
+      height: 450px;
+      filter: grayscale(100%);
+    }
+   </style>
     <h2>Find Us</h2>
     <div id="map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d132370.4863217408!2d-88.81978150000002!3d35.6188291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887e11e9bb0e2c55%3A0x6e6543b2c3c5c9b1!2sMadison%20Academic%20High%20School%2C%20575%20Lambuth%20Ave%2C%20Jackson%2C%20TN%2038301!5e0!3m2!1sen!2sus!4v1631678342385!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
   </section>
+
+<h3>@ 123Barber St, Jackson TN</h3>
 
   <footer>
     <p>© 2024 Patron Men's Grooming. All rights reserved.</p>

@@ -123,7 +123,7 @@ h2, h3 {
 }
 
 .service-item {
-  background-color: #fff;
+  background-color: #ffff;
   padding: 20px;
   border-radius: 10px;
   width: 30%; /* Adjust width for three columns */
@@ -334,7 +334,6 @@ body, div, form, input, select, p {
   height: 100%;
   }
   .main-block {
-  flex-direction: row;
   height: calc(100% - 50px);
   }
   .left-part, form {
@@ -493,6 +492,8 @@ body, div, form, input, select, p {
 .buy-btn:hover {
   background-color: #cc5200; /* Darken on hover */
 }
+
+
 
 /* Service Item */
 .service-item {
@@ -672,3 +673,4 @@ body, div, form, input, select, p {
       grid-template-columns: 1fr; /* One item per row on small screens */
   }
 }
+

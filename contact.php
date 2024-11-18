@@ -155,16 +155,9 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo">Patron</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="buy.html" class="book-btn">Buy Now</a></li>
-            </ul>
-        </nav>
-    </header>
+<?php
+include_once 'nav.php';
+?>
 
     <section id="contact">
         <h2>Contact Us</h2>
