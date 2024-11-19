@@ -40,32 +40,33 @@ include_once 'nav.php';
       Join us on this journey as we redefine men's grooming, one cut at a time. Experience the Patron difference—where tradition meets innovation, and every detail matters.
     </p>
   </section>
-
   <section id="services">
-    <h2>Our Services</h2>
-    <div class="service-list">
-      <div class="service-item">
-        <img src="images/IMG_3010.jpeg" alt="Traditional Shaving" class="service-image">
-        <h3>Traditional Shaving</h3>
-        <p>Experience a classic shave </p>
-      </div>
-      <div class="service-item">
-        <img src="images/IMG_3008.jpeg" alt="Beard Shaping" class="service-image">
-        <h3>Beard Shaping</h3>
-        <p>Crafted beard trims for sharp looks.</p>
-      </div>
-      <div class="service-item">
-        <img src="images/Untitled design.png" alt="Precision Haircuts" class="service-image">
-        <h3>Precision Haircuts</h3>
-        <p>Classic to modern styles tailored to you.</p>
-      </div>
+  <h2>Our Services</h2>
+  <div class="service-lis">
+    <div class="service-item">
+      <img src="images/IMG_3010.jpeg" alt="Traditional Shaving" class="service-image">
+      <h3>Traditional Shaving</h3>
+      <p>Experience a classic shave</p>
     </div>
-  </section>
+    <div class="service-item">
+      <img src="images/IMG_3008.jpeg" alt="Beard Shaping" class="service-image">
+      <h3>Beard Shaping</h3>
+      <p>Crafted beard trims for sharp looks.</p>
+    </div>
+    <div class="service-item">
+      <img src="images/Untitled design.png" alt="Precision Haircuts" class="service-image">
+      <h3>Precision Haircuts</h3>
+      <p>Classic to modern styles tailored to you.</p>
+    </div>
+    <!-- Add more cards as needed -->
+  </div>
+</section>
 
+  
   <section id="services">
     <h2>Our Best Selling Products</h2>
-    <div class="service-list">
-        <div class="service-item">
+    <div class="service-lis">
+        <div class="service-itemm">
             <img src="images/barber cap product.jpeg" alt="Barber Cap" class="service-image">
             <h3> Barber Cap</h3>
             <p>The cap that delivers precision haircuts effortlessly.</p>
@@ -73,7 +74,7 @@ include_once 'nav.php';
             <button class="buy-btn">Buy Now</button>
         </div>
 
-        <div class="service-item">
+        <div class="service-itemm">
             <img src="images/beard trimmer.jpeg" alt="Barber Cap" class="service-image"> 
             <h3>TrimPro4X</h3>
             <p>Stay sharp, stay clean with the TrimPro4X.</p>
@@ -81,7 +82,7 @@ include_once 'nav.php';
             <button class="buy-btn">Buy Now</button>
         </div>
 
-        <div class="service-item">
+        <div class="service-itemm">
             <img src="images/nose trimmer.jpeg" alt="Barber Cap" class="service-image">
             <h3>LuxeTrim Duo</h3>
             <p>Gentle yet powerful- perfect for nose and ears.</p>

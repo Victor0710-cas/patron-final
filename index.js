@@ -36,28 +36,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
-// JavaScript for showing and hiding reviews on hover
-function showReview(element) {
-  const reviewPopup = element.querySelector('.review-popup');
-  reviewPopup.style.opacity = '1';
-  reviewPopup.style.visibility = 'visible';
-}
-
-function hideReview(element) {
-  const reviewPopup = element.querySelector('.review-popup');
-  reviewPopup.style.opacity = '0';
-  reviewPopup.style.visibility = 'hidden';
-}
-
-document.querySelectorAll('.service-item').forEach((item) => {
-  item.addEventListener('mouseover', () => {
-      const popup = item.querySelector('.review-popup');
-      popup.style.display = 'block';
-  });
-
-  item.addEventListener('mouseout', () => {
-      const popup = item.querySelector('.review-popup');
-      popup.style.display = 'none';
-  });
-});
