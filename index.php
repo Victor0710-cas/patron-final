@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Patron Men's Grooming</title>
-  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="images/black-short.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <style>
   p{
@@ -40,61 +40,54 @@ include_once 'nav.php';
       Join us on this journey as we redefine men's grooming, one cut at a time. Experience the Patron difference—where tradition meets innovation, and every detail matters.
     </p>
   </section>
-  <section id="services">
-  <h2>Our Services</h2>
-  <div class="service-lis">
-    <div class="service-item">
-      <img src="images/IMG_3010.jpeg" alt="Traditional Shaving" class="service-image">
-      <h3>Traditional Shaving</h3>
-      <p>Experience a classic shave</p>
-    </div>
-    <div class="service-item">
-      <img src="images/IMG_3008.jpeg" alt="Beard Shaping" class="service-image">
-      <h3>Beard Shaping</h3>
-      <p>Crafted beard trims for sharp looks.</p>
-    </div>
-    <div class="service-item">
-      <img src="images/Untitled design.png" alt="Precision Haircuts" class="service-image">
-      <h3>Precision Haircuts</h3>
-      <p>Classic to modern styles tailored to you.</p>
-    </div>
-    <!-- Add more cards as needed -->
-  </div>
-</section>
-
   
   <section id="services">
-    <h2>Our Best Selling Products</h2>
-    <div class="service-lis">
-        <div class="service-itemm">
-            <img src="images/barber cap product.jpeg" alt="Barber Cap" class="service-image">
-            <h3> Barber Cap</h3>
-            <p>The cap that delivers precision haircuts effortlessly.</p>
-            <div class="service-rating">★★★★★</div>
-            <button class="buy-btn">Buy Now</button>
-        </div>
-
-        <div class="service-itemm">
-            <img src="images/beard trimmer.jpeg" alt="Barber Cap" class="service-image"> 
-            <h3>TrimPro4X</h3>
-            <p>Stay sharp, stay clean with the TrimPro4X.</p>
-            <div class="service-rating">★★★★★</div>
-            <button class="buy-btn">Buy Now</button>
-        </div>
-
-        <div class="service-itemm">
-            <img src="images/nose trimmer.jpeg" alt="Barber Cap" class="service-image">
-            <h3>LuxeTrim Duo</h3>
-            <p>Gentle yet powerful- perfect for nose and ears.</p>
-            <div class="service-rating">★★★★★</div>
-            <button class="buy-btn">Buy Now</button>
-        </div>
-        
-   
-        </div>
-        <!-- Add more products as needed -->
+    <h2>Our Services</h2>
+    <div class="service-container">
+      <div class="service-itemms">
+        <img src="images/IMG_3010.jpeg" alt="Traditional Shaving" class="service-images">
+        <h3>Traditional Shaving</h3>
+        <p>Experience a classic shave</p>
+      </div>
+      <div class="service-itemms">
+        <img src="images/IMG_3008.jpeg" alt="Beard Shaping" class="service-images">
+        <h3>Beard Shaping</h3>
+        <p>Crafted beard trims for sharp looks.</p>
+      </div>
+      <div class="service-itemms">
+        <img src="images/Untitled design.png" alt="Precision Haircuts" class="service-images">
+        <h3>Precision Haircuts</h3>
+        <p>Classic to modern styles tailored to you.</p>
+      </div>
     </div>
-</section>
+  </section>
+
+  <section id="products">
+    <h2>Our Best Selling Products</h2>
+    <div class="service-container">
+      <div class="service-itemms">
+        <img src="images/barber cap product.jpeg" alt="Barber Cap" class="service-images">
+        <h3>Barber Cap</h3>
+        <p>The cap that delivers precision haircuts effortlessly.</p>
+        <div class="service-rating">★★★★★</div>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+      <div class="service-itemms">
+        <img src="images/beard trimmer.jpeg" alt="TrimPro4X" class="service-images">
+        <h3>TrimPro4X</h3>
+        <p>Stay sharp, stay clean with the TrimPro4X.</p>
+        <div class="service-rating">★★★★★</div>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+      <div class="service-itemms">
+        <img src="images/nose trimmer.jpeg" alt="LuxeTrim Duo" class="service-images">
+        <h3>LuxeTrim Duo</h3>
+        <p>Gentle yet powerful- perfect for nose and ears.</p>
+        <div class="service-rating">★★★★★</div>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+  </section>
 
  
   
@@ -168,8 +161,9 @@ Buy with us today and enjoy a wide range of premium services, designed exclusive
     </div>
   </section>
 
+        <div class="barb">
 <h3>@ 123Barber St, Jackson TN</h3>
-
+</div>
   <footer>
     <p>© 2024 Patron Men's Grooming. All rights reserved.</p>
   </footer>
