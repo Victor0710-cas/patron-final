@@ -33,6 +33,7 @@ include_once 'nav.php';
 
   <section id="about">
     <h2>About</h2>
+    <br>
     <p style="color: black;">
       Welcome to Patron, where expert craftsmanship meets innovative grooming solutions. Founded in 2023 by a passionate team of seasoned barbers, we are dedicated to revolutionizing men's grooming. Our mission is simple: to create high-quality products that streamline your grooming routine, saving you time while enhancing your style.
       At Patron, we understand that grooming isn't just a task; it's an experience. Each member of our team brings years of hands-on expertise, ensuring our products not only meet the highest standards but also cater to the unique needs of every man. We believe that a great look starts with quality tools, and our range of grooming essentials is designed to empower you to achieve professional results at home.
@@ -75,7 +76,7 @@ include_once 'nav.php';
       <div class="service-itemms">
         <img src="images/beard trimmer.jpeg" alt="TrimPro4X" class="service-images">
         <h3>TrimPro4X</h3>
-        <p>Stay sharp, stay clean with the TrimPro4X.</p>
+        <p>Stay sharp, stay clean with the new TrimPro4X.</p>
         <div class="service-rating">★★★★★</div>
         <button class="buy-btn">Buy Now</button>
       </div>
@@ -136,10 +137,10 @@ include_once 'nav.php';
   </section>
 
           <h2>LOCATION</h2>
-          <h3>Patron isn’t just a Mens Grooming company —it’s a cornerstone of the Jackson community.
+          <h4>Patron isn’t just a Mens Grooming company —it’s a cornerstone of the Jackson community.
              We provide an exceptional grooming experience tailored to exceed your highest expectations.
 
-Buy with us today and enjoy a wide range of premium services, designed exclusively for you—the distinguished gentleman. </h3>
+Buy with us today and enjoy a wide range of premium services, designed exclusively for you—the distinguished gentleman. </h4>
   <section id="location">
   <style>
     #map-container {

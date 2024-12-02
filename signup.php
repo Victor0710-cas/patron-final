@@ -11,6 +11,97 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <style>
+   .main-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.5); 
+  }
+  .left-part, form {
+  padding: 25px;
+  }
+  .left-part {
+  text-align: center;
+  }
+  .fa-graduation-cap {
+  font-size: 72px;
+  }
+  form {
+  background: rgba(0, 0, 0, 0.7); 
+  }
+  .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  }
+  .info {
+  display: flex;
+  flex-direction: column;
+  }
+  input, select {
+  padding: 5px;
+  margin-bottom: 30px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #eee;
+  }
+  input::placeholder {
+  color: #eee;
+  }
+  option:focus {
+  border: none;
+  }
+  option {
+  background: black; 
+  border: none;
+  }
+  .checkbox input {
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+  }
+  .checkbox a {
+  color: #26a9e0;
+  }
+  .checkbox a:hover {
+  color: #85d6de;
+  }
+  .btn-item, button {
+  padding: 10px 5px;
+  margin-top: 20px;
+  border-radius: 5px; 
+  border: none;
+  background-color: #444; 
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  }
+  .btn-item {
+  display: inline-block;
+  margin: 20px 5px 0;
+  }
+  button {
+  width: 100%;
+  }
+  button:hover, .btn-item:hover {
+  background: #1b393b;
+  }
+  @media (min-width: 568px) {
+  html, body {
+  height: 100%;
+  }
+  .main-block {
+  height: calc(100% - 50px);
+  }
+  .left-part, form {
+  flex: 1;
+  height: auto;
+  }
+  }
+
   .signup {
     background-image: url(images/background-blurred.png);
     background-position: center;
