@@ -9,7 +9,7 @@ include_once 'nav.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message Sent - Patron Men's Grooming</title>
     <link rel="stylesheet" href="contact.css">
-    <link rel="icon" type="image/x-icon" href="images/slice.jpeg">
+    <link rel="icon" type="image/x-icon" href="images/Contact Pic.jpeg">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <style>
         /* Basic Resets */
@@ -22,7 +22,7 @@ include_once 'nav.php';
 
         /* Full-page Background Image */
         body {
-            background: url('images/slice.jpeg') no-repeat center center fixed;
+            background: url('images/Contact Pic.jpeg') no-repeat center center fixed;
             background-size: cover;
             color: #333;
             display: flex;
@@ -70,12 +70,11 @@ include_once 'nav.php';
             background-color: #444;
             color: white;
         }
-
     </style>
 </head>
 <body>
     <div class="message-container">
-        <h1>Your message has been sent!</h1>
+        <h1> message sent!</h1>
         <p>Thank you for reaching out to us. We will get back to you as soon as possible.</p>
         <p>If you need further assistance, feel free to <a href="contact.php">contact us again</a>.</p>
     </div>
