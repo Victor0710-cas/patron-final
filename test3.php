@@ -50,7 +50,7 @@
                     <div class="bottom">
                         <div class="left">
                             <div class="details">
-                                <h1>Chair</h1>
+                                <h1>TrimProX</h1>
                                 <p>£250</p>
                             </div>
                             <div class="buy"><i class="material-icons">add_shopping_cart</i></div>

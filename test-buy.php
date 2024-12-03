@@ -2,316 +2,542 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Patron Buy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patron Men's Grooming</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/short-logo.png">
+
+    <!-- CSS Files -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<style>
-    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap');
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        font-family: 'Poppins', sans-serif;
-        background: #000;
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="buy.css">
+    <link rel="stylesheet" href="test-buy2.css">
+
+    <!-- Additional Styling for Specific Page -->
+    <?php
+    if (basename($_SERVER['PHP_SELF']) == 'buy.php') {
+        echo '<link rel="stylesheet" href="test-buy.css">';
     }
+    ?>
 
-    .container {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 900px;
-        height: 600px;
-        background: #fff;
-        margin: 20px;
-    }
-
-    .container .imgBx {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        height: 100%;
-        background: #3a3a3a;
-        transition: .3s linear;
-    }
-
-    .container .imgBx:before {
-        position: absolute;
-        top: 0px;
-        left: 24px;
-        color: #D3d3d3;
-        opacity: 0.2;
-        font-size: 5em;
-        font-weight: 800;
-    }
-
-    .container .imgBx img {
-        position: relative;
-        width: 200vh;
-        left: -50px;
-        transition: .9s linear;
-    }
-
-    .container .details {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        height: 100%;
-        box-sizing: border-box;
-        padding: 40px;
-    }
-
-    .container .details h2 {
-        margin: 0;
-        padding: 0;
-        font-size: 2.4em;
-        line-height: 1em;
-        color: #444;
-    }
-
-    .container .details h2 span {
-        font-size: 0.4em;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        color: #999;
-    }
-
-    .container .details p {
-        max-width: 85%;
-        margin-left: 15%;
-        color: #333;
-        font-size: 15px;
-        margin-bottom: 36px;
-    }
-
-    .container .details h3 {
-        margin: 0;
-        padding: 0;
-        font-size: 2.5em;
-        color: #a2a2a2;
-        float: left;
-    }
-
-    .container .details button {
-        background: #000;
-        color: #fff;
-        border: none;
-        outline: none;
-        padding: 15px 20px;
-        margin-top: 5px;
-        font-size: 16px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        font-weight: 600;
-        border-radius: 40px;
-        float: right;
-    }
-
-    .product-colors span {
-        width: 26px;
-        height: 26px;
-        top: 7px;
-        margin-right: 12px;
-        left: 10px;
-        border-radius: 50%;
-        position: relative;
-        cursor: pointer;
-        display: inline-block;
-    }
-
-    .black {
-        background: #000;
-    }
-
-    .red {
-        background: #D5212E;
-    }
-
-    .orange {
-        background: #F18557;
-    }
-
-    .product-colors .active:after {
-        content: "";
-        width: 36px;
-        height: 36px;
-        border: 2px solid #000;
-        position: absolute;
-        border-radius: 50%;
-        box-sizing: border-box;
-        left: -5px;
-        top: -5px;
-    }
-
-    /* responsive */
-    @media (max-width: 1080px) {
-        .container {
-            height: auto;
+    <style>
+        /* Cart Styles */
+        .cart-container {
+            position: fixed;
+            top: 80px; /* Adjust this if navbar height changes */
+            right: 20px;
+            z-index: 1000;
         }
 
-        .container .imgBx {
-            padding: 40px;
-            box-sizing: border-box;
-            width: 100% !important;
-            height: auto;
+        .cart {
+            background-color: #fff;
+            border: 1px solid #000;
+            border-radius: 8px;
+            padding: 15px;
+            max-width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-header {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
             text-align: center;
-            overflow: hidden;
+            color: #000;
         }
 
-        .container .imgBx img {
-            left: initial;
-            max-width: 100%;
+        .cart-items {
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
 
-        .details {
-            width: 100% !important;
-            height: auto;
-            padding: 20px;
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
         }
 
-        .container .details p {
-            margin-left: 0;
-            max-width: 100%;
+        .cart-item p {
+            margin: 0;
+            color: #000;
         }
-    }
 
-    footer {
-        position: fixed;
-        right: 16px;
-        bottom: 12px;
-    }
+        .remove-item {
+            cursor: pointer;
+            color: red;
+        }
 
-    footer a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 12px;
-    }
+        .cart-total {
+            font-weight: bold;
+            margin-top: 15px;
+            text-align: center;
+            color: #000;
+        }
 
-    h1 {
-        position: absolute;
+        .cart-icon {
+            font-size: 1.8rem;
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+        }
 
-    }
-</style>
+        .cart-details {
+            display: none;
+            background-color: white;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            width: 300px;
+            padding: 15px;
+            border: 1px solid black;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-<body>
-    <!DOCTYPE html>
-    <html lang="en">
+        .cart-details.active {
+            display: block;
+        }
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Product Card UI Design</title>
+        .checkout-btn {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+        }
 
-        <!-- Vendor Script -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        body {
+            position: relative;
+        }
+    </style>
+</head>
 
-    </head>
+<body class="container">
 
-    <body class="container-fluid">
-        <div class=" row">
-            <div class="container col">
-                <div class="imgBx">
-                    <h1>Patron</h1>
-                    <img src="images/hair oil-transp.jpeg" alt="Nike Jordan Proto-Lyte Image">
+    <!-- Navbar -->
+    <?php include_once 'nav.php'; ?>
 
+    <!-- Sticky Cart Icon -->
+    <div class="cart-container">
+        <div class="cart-icon" id="cartIcon">
+            <span id="cartItemCount">0</span>
+            <i class="material-icons">shopping_cart</i>
+        </div>
+        <div class="cart-details" id="cartDetails">
+            <div class="cart-header">Your Cart</div>
+            <ul class="cart-items"></ul>
+            <div class="cart-total">Total: £0</div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <section class="buy-header text-center py-4">
+        <h2>Buy Now</h2>
+        <h3>Discover Our Premium Products</h3>
+    </section>
+
+    <!-- Main Product Grid -->
+    <div class="row">
+        <!-- Product Cards -->
+        <div class="col">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h1>Chair</h1>
+                                <p>6999</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                        <div class="right">
+                            <div class="done"><i class="material-icons">done</i></div>
+                            <div class="details">
+                                <h1>Chair</h1>
+                                <p>Added to your cart</p>
+                            </div>
+                            <div class="remove"><i class="material-icons">clear</i></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="details">
-                    <div class="content">
-                        <h2>UNC'S Hair Oil <br>
-                            <span>Grooming Collection</span>
-                        </h2>
-                        <p>
-                            Featuring soft foam cushioning and lightweight, woven fabric in the upper, the Jordan
-                            Proto-Lyte is
-                            made for all-day, bouncy comfort.
-                            Lightweight Breathability: Lightweight woven fabric with real or synthetic leather provides
-                            breathable support.
-                            Cushioned Comfort: A full-length foam midsole delivers lightweight, plush cushioning.
-                            Secure Traction: Exaggerated herringbone-pattern outsole offers traction on a variety of
-                            surfaces.
-                        </p>
-
-                        <h3>$50</h3>
-                        <button>Buy Now</button>
+                <div class="inside">
+                    <div class="icon"><i class="material-icons">info_outline</i></div>
+                    <div class="contents">
+                        <table>
+                            <tr>
+                                <th>Width</th>
+                                <th>Height</th>
+                            </tr>
+                            <tr>
+                                <td>3000mm</td>
+                                <td>4000mm</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
-            <div class="container col">
-                <div class="imgBx">
-                    <img src="images/hair oil-transp.jpeg" alt="Nike Jordan Proto-Lyte Image">
+        </div>
+        <div class="col">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h1>Chair</h1>
+                                <p>6999</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                        <div class="right">
+                            <div class="done"><i class="material-icons">done</i></div>
+                            <div class="details">
+                                <h1>Chair</h1>
+                                <p>Added to your cart</p>
+                            </div>
+                            <div class="remove"><i class="material-icons">clear</i></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="details">
-                    <div class="content">
-                        <h2>UNC'S Hair Oil <br>
-                            <span>Grooming Collection</span>
-                        </h2>
-                        <p>
-                            Featuring soft foam cushioning and lightweight, woven fabric in the upper, the Jordan
-                            Proto-Lyte is
-                            made for all-day, bouncy comfort.
-                            Lightweight Breathability: Lightweight woven fabric with real or synthetic leather provides
-                            breathable support.
-                            Cushioned Comfort: A full-length foam midsole delivers lightweight, plush cushioning.
-                            Secure Traction: Exaggerated herringbone-pattern outsole offers traction on a variety of
-                            surfaces.
-                        </p>
-
-                        <h3>$50</h3>
-                        <button>Buy Now</button>
+                <div class="inside">
+                    <div class="icon"><i class="material-icons">info_outline</i></div>
+                    <div class="contents">
+                        <table>
+                            <tr>
+                                <th>Width</th>
+                                <th>Height</th>
+                            </tr>
+                            <tr>
+                                <td>3000mm</td>
+                                <td>4000mm</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
-            <div class="container col">
-                <div class="imgBx">
-                    <img src="images/hair oil-transp.jpeg" alt="Nike Jordan Proto-Lyte Image">
+        </div>
+        <div class="col">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h1>Chair</h1>
+                                <p>6999</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                        <div class="right">
+                            <div class="done"><i class="material-icons">done</i></div>
+                            <div class="details">
+                                <h1>Chair</h1>
+                                <p>Added to your cart</p>
+                            </div>
+                            <div class="remove"><i class="material-icons">clear</i></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="details">
-                    <div class="content">
-                        <h2>UNC'S Hair Oil <br>
-                            <span>Grooming Collection</span>
-                        </h2>
-                        <p>
-                            Featuring soft foam cushioning and lightweight, woven fabric in the upper, the Jordan
-                            Proto-Lyte is
-                            made for all-day, bouncy comfort.
-                            Lightweight Breathability: Lightweight woven fabric with real or synthetic leather provides
-                            breathable support.
-                            Cushioned Comfort: A full-length foam midsole delivers lightweight, plush cushioning.
-                            Secure Traction: Exaggerated herringbone-pattern outsole offers traction on a variety of
-                            surfaces.
-                        </p>
-
-                        <h3>$50</h3>
-                        <button>Buy Now</button>
+                <div class="inside">
+                    <div class="icon"><i class="material-icons">info_outline</i></div>
+                    <div class="contents">
+                        <table>
+                            <tr>
+                                <th>Width</th>
+                                <th>Height</th>
+                            </tr>
+                            <tr>
+                                <td>3000mm</td>
+                                <td>4000mm</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h1>Chair</h1>
+                                <p>6999</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                        <div class="right">
+                            <div class="done"><i class="material-icons">done</i></div>
+                            <div class="details">
+                                <h1>Chair</h1>
+                                <p>Added to your cart</p>
+                            </div>
+                            <div class="remove"><i class="material-icons">clear</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <div class="icon"><i class="material-icons">info_outline</i></div>
+                    <div class="contents">
+                        <table>
+                            <tr>
+                                <th>Width</th>
+                                <th>Height</th>
+                            </tr>
+                            <tr>
+                                <td>3000mm</td>
+                                <td>4000mm</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- More Product Cards as needed -->
+        <!-- Repeat similar blocks for more products -->
+    </div>
+    <div class="row">
+        <!-- Product Cards -->
+        <div class="col">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h1>Chair</h1>
+                                <p>6999</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                        <div class="right">
+                            <div class="done"><i class="material-icons">done</i></div>
+                            <div class="details">
+                                <h1>Chair</h1>
+                                <p>Added to your cart</p>
+                            </div>
+                            <div class="remove"><i class="material-icons">clear</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <div class="icon"><i class="material-icons">info_outline</i></div>
+                    <div class="contents">
+                        <table>
+                            <tr>
+                                <th>Width</th>
+                                <th>Height</th>
+                            </tr>
+                            <tr>
+                                <td>3000mm</td>
+                                <td>4000mm</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h1>Chair</h1>
+                                <p>6999</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                        <div class="right">
+                            <div class="done"><i class="material-icons">done</i></div>
+                            <div class="details">
+                                <h1>Chair</h1>
+                                <p>Added to your cart</p>
+                            </div>
+                            <div class="remove"><i class="material-icons">clear</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <div class="icon"><i class="material-icons">info_outline</i></div>
+                    <div class="contents">
+                        <table>
+                            <tr>
+                                <th>Width</th>
+                                <th>Height</th>
+                            </tr>
+                            <tr>
+                                <td>3000mm</td>
+                                <td>4000mm</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h1>Chair</h1>
+                                <p>6999</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                        <div class="right">
+                            <div class="done"><i class="material-icons">done</i></div>
+                            <div class="details">
+                                <h1>Chair</h1>
+                                <p>Added to your cart</p>
+                            </div>
+                            <div class="remove"><i class="material-icons">clear</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <div class="icon"><i class="material-icons">info_outline</i></div>
+                    <div class="contents">
+                        <table>
+                            <tr>
+                                <th>Width</th>
+                                <th>Height</th>
+                            </tr>
+                            <tr>
+                                <td>3000mm</td>
+                                <td>4000mm</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h1>Chair</h1>
+                                <p>6999</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                        <div class="right">
+                            <div class="done"><i class="material-icons">done</i></div>
+                            <div class="details">
+                                <h1>Chair</h1>
+                                <p>Added to your cart</p>
+                            </div>
+                            <div class="remove"><i class="material-icons">clear</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <div class="icon"><i class="material-icons">info_outline</i></div>
+                    <div class="contents">
+                        <table>
+                            <tr>
+                                <th>Width</th>
+                                <th>Height</th>
+                            </tr>
+                            <tr>
+                                <td>3000mm</td>
+                                <td>4000mm</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <!-- Footer -->
-        <footer>
-            <a href="https://stylustechnepal.com" target="_blank">anuzbvbmaniac123@gmail.com</a>
-        </footer>
+        <!-- More Product Cards as needed -->
+        <!-- Repeat similar blocks for more products -->
+    </div>
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <a href="https://stylustechnepal.com" target="_blank"></a>
+    </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
-    </body>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha384-o+pMzZnY0lhgExbD1slOdcAA55ND6LtK5k2xHpyPQpykPd7NJ6Kk8k3KDdKGjig0" crossorigin="anonymous">
+    </script>
 
-    </html>
+    <script>
+        const cart = [];
+
+        // Update the cart UI
+        const updateCart = () => {
+            const cartItemsContainer = $('.cart-items');
+            const cartTotal = $('.cart-total');
+            const cartItemCount = $('#cartItemCount');
+            cartItemsContainer.empty();
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                total += item.price;
+                cartItemsContainer.append(`
+                    <li class="cart-item">
+                        <p>${item.name} - £${item.price}</p>
+                        <span class="remove-item" data-index="${index}">&times;</span>
+                    </li>
+                `);
+            });
+
+            cartTotal.text(`Total: £${total}`);
+            cartItemCount.text(cart.length);
+        };
+
+        // Add product to cart
+        $('.buy').click(function () {
+            const productName = $(this).siblings('.details').find('h1').text();
+            const productPrice = parseInt($(this).siblings('.details').find('p').text().replace('£', ''));
+            cart.push({ name: productName, price: productPrice });
+            updateCart();
+        });
+
+        // Remove product from cart
+        $(document).on('click', '.remove-item', function () {
+            const index = $(this).data('index');
+            cart.splice(index, 1);
+            updateCart();
+        });
+
+        // Toggle cart details visibility
+        $('#cartIcon').click(function () {
+            $('#cartDetails').toggleClass('active');
+        });
+
+        // Close cart if clicked outside
+        $(document).click(function (event) {
+            if (!$(event.target).closest('.cart-container').length) {
+                $('#cartDetails').removeClass('active');
+            }
+        });
+    </script>
 </body>
 
 </html>
