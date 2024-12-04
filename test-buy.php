@@ -129,19 +129,19 @@
     <!-- Navbar -->
     <?php include_once 'nav.php'; ?>
 
-   <!-- Sticky Cart Icon -->
-<div class="cart-container">
-    <div class="cart-icon" id="cartIcon">
-        <span id="cartItemCount">0</span>
-        <i class="material-icons">shopping_cart</i>
+    <!-- Sticky Cart Icon -->
+    <div class="cart-container">
+        <div class="cart-icon" id="cartIcon">
+            <span id="cartItemCount">0</span>
+            <i class="material-icons">shopping_cart</i>
+        </div>
+        <div class="cart-details" id="cartDetails">
+            <div class="cart-header">Your Cart</div>
+            <ul class="cart-items"></ul>
+            <div class="cart-total">Total: £0</div>
+            <a href="checkoutinfo.php" class="checkout-btn">Checkout</a>
+        </div>
     </div>
-    <div class="cart-details" id="cartDetails">
-        <div class="cart-header">Your Cart</div>
-        <ul class="cart-items"></ul>
-        <div class="cart-total">Total: £0</div>
-        <a href="checkoutinfo.php" class="checkout-btn">Checkout</a>
-    </div>
-</div>
 
 
     <!-- Header Section -->
@@ -520,114 +520,80 @@
         <!-- More Product Cards as needed -->
         <!-- Repeat similar blocks for more products -->
     </div>
-    
 
-                    <!-- More Product Cards as needed -->
-                    <!-- Repeat similar blocks for more products -->
-                </div>
-                <!-- Footer -->
-                <footer class="text-center py-3">
-                    <a href="https://stylustechnepal.com" target="_blank"></a>
-                </footer>
 
-                <!-- Scripts -->
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-                    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-                    crossorigin="anonymous">
-                </script>
-                <script src="https://code.jquery.com/jquery-3.6.4.min.js"
-                    integrity="sha384-o+pMzZnY0lhgExbD1slOdcAA55ND6LtK5k2xHpyPQpykPd7NJ6Kk8k3KDdKGjig0"
-                    crossorigin="anonymous">
-                </script>
+    <!-- More Product Cards as needed -->
+    <!-- Repeat similar blocks for more products -->
+    </div>
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <a href="https://stylustechnepal.com" target="_blank"></a>
+    </footer>
 
-                <script>
-                    const cart = [];
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha384-o+pMzZnY0lhgExbD1slOdcAA55ND6LtK5k2xHpyPQpykPd7NJ6Kk8k3KDdKGjig0" crossorigin="anonymous">
+    </script>
 
-                    // Update the cart UI
-                    const updateCart = () => {
-                        const cartItemsContainer = $('.cart-items');
-                        const cartTotal = $('.cart-total');
-                        const cartItemCount = $('#cartItemCount');
-                        cartItemsContainer.empty();
-                        let total = 0;
+    <script>
+        const cart = [];
 
-                        cart.forEach((item, index) => {
-                            total += item.price;
-                            cartItemsContainer.append(`
+        // Update the cart UI
+        const updateCart = () => {
+            const cartItemsContainer = $('.cart-items');
+            const cartTotal = $('.cart-total');
+            const cartItemCount = $('#cartItemCount');
+            cartItemsContainer.empty();
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                total += item.price;
+                cartItemsContainer.append(`
                     <li class="cart-item">
                         <p>${item.name} - £${item.price}</p>
                         <span class="remove-item" data-index="${index}">&times;</span>
                     </li>
                 `);
-                        });
+            });
 
-                        cartTotal.text(`Total: £${total}`);
-                        cartItemCount.text(cart.length);
-                    };
+            cartTotal.text(`Total: £${total}`);
+            cartItemCount.text(cart.length);
+        };
 
-                    // Add product to cart
-                    $('.buy').click(function () {
-                        const productName = $(this).siblings('.details').find('h1').text();
-                        const productPrice = parseInt($(this).siblings('.details').find('p').text().replace('£',
-                            ''));
-                        cart.push({
-                            name: productName,
-                            price: productPrice
-                        });
-                        updateCart();
-                    });
+        // Add product to cart
+        $('.buy').click(function () {
+            const productName = $(this).siblings('.details').find('h1').text();
+            const productPrice = parseInt($(this).siblings('.details').find('p').text().replace('£',
+                ''));
+            cart.push({
+                name: productName,
+                price: productPrice
+            });
+            updateCart();
+        });
 
-                    // Remove product from cart
-                    $(document).on('click', '.remove-item', function () {
-                        const index = $(this).data('index');
-                        cart.splice(index, 1);
-                        updateCart();
-                    });
+        // Remove product from cart
+        $(document).on('click', '.remove-item', function () {
+            const index = $(this).data('index');
+            cart.splice(index, 1);
+            updateCart();
+        });
 
-                    // Toggle cart details visibility
-                    $('#cartIcon').click(function () {
-                        $('#cartDetails').toggleClass('active');
-                    });
+        // Toggle cart details visibility
+        $('#cartIcon').click(function () {
+            $('#cartDetails').toggleClass('active');
+        });
 
-                    // Close cart if clicked outside
-                    $(document).click(function (event) {
-                        if (!$(event.target).closest('.cart-container').length) {
-                            $('#cartDetails').removeClass('active');
-                        }
-                    });
-
-
-
-
-
-                    const updateCart = () => {
-    const cartItemsContainer = $('.cart-items');
-    const cartTotal = $('.cart-total');
-    const cartItemCount = $('#cartItemCount');
-    cartItemsContainer.empty();
-    let total = 0;
-
-    cart.forEach((item, index) => {
-        total += item.price;
-        cartItemsContainer.append(`
-            <li class="cart-item">
-                <p>${item.name} - £${item.price}</p>
-                <span class="remove-item" data-index="${index}">&times;</span>
-            </li>
-        `);
-    });
-
-    cartTotal.text(`Total: £${total}`);
-    cartItemCount.text(cart.length);
-
-    // Save the cart to local storage
-    localStorage.setItem('cart', JSON.stringify(cart));
-    localStorage.setItem('total', total);
-};
-
-
-
-                </script>
+        // Close cart if clicked outside
+        $(document).click(function (event) {
+            if (!$(event.target).closest('.cart-container').length) {
+                $('#cartDetails').removeClass('active');
+            }
+        });
+    </script>
 </body>
 
 </html>

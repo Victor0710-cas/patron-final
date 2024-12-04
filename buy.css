@@ -1,16 +1,21 @@
+html, body {
+  height: 100%; /* Ensure the html and body elements span the full height */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+}
+
 body {
-    background-image: url('images/IMG_3735.jpeg'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh; /* Ensures the background covers the full screen */
-    margin: 0; /* Removes default margins */
-    padding: 0; /* Removes default padding */
-  }
+  background-image: url('images/istockphoto-1342201170-612x612.jpg'); /* Replace with your image path */
+  background-size: cover; /* Scale the image to cover the full container */
+  background-position: center; /* Center the image */
+  background-repeat: yes; /* Prevent tiling */
+  color: gray;
+}
+
   /* Style for Buy Page Header Section */
 /* General Styling for Header Section */
 .buy-header {
-    margin: 100px auto 50px; /* Space above and below the text */
+    margin: 50px auto 50px; /* Space above and below the text */
     text-align: center; /* Centers the text */
   }
   
@@ -34,5 +39,15 @@ body {
     letter-spacing: 1px; /* Small letter spacing */
     margin: 0;
   }
+  footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 0px 0;
+    margin-top: 1px;
+  }
   
+  footer p {
+    color: #ccc;
+  }
   /* Updated Services Section */

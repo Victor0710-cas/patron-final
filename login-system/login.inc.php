@@ -1,19 +1,21 @@
 <?php
-if (isset($_POST['login-submit'])){
+if (isset($_POST['login-submit'])) {
 
     require 'dbh.inc.php';
-    $mailuid = $_POST['mailuid'];
-    $password = $_POST['pwd'];
+    session_start();
+
+    // Collecting the input values
+    $mailuid = $_POST['mailuid']; 
+    $password = $_POST['pwd']; 
 
     if (empty($mailuid) || empty($password)) {
-        header("Location: ../index.php?error=emptyfields");
+        header("Location: ../login.php?error=emptyfields");
         exit();
-    } 
-    else {
+    } else {
         $sql = "SELECT * FROM users WHERE uidUsers=? OR emailUsers=?;";
         $stmt = mysqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: ../index.php?error=sqlerror");
+            header("Location: ../login.php?error=sqlerror");
             exit();
         } else {
             mysqli_stmt_bind_param($stmt, "ss", $mailuid, $mailuid);
@@ -22,22 +24,26 @@ if (isset($_POST['login-submit'])){
             if ($row = mysqli_fetch_assoc($result)) {
                 $pwdCheck = password_verify($password, $row['pwdUsers']);
                 if ($pwdCheck == false) {
-                    header("Location: ../index.php?error=wrongpwd");
+                    header("Location: ../login.php?error=wrongpwd");
                     exit();
-                } else if ($pwdCheck == true) { 
-                    session_start();
-                    $_SESSION['userId'] = $row['pwdUsers'];
-                    $_SESSION['userUid'] = $row['uidUsers'];
-                    header("Location: ../index.php?login=success");
-                    exit();
+                } else if ($pwdCheck == true) {
+                    // Set session variables after successful login
+                    $_SESSION['userId'] = $row['idUsers']; 
+                    $_SESSION['userUid'] = $row['uidUsers']; 
+                    $_SESSION['email'] = $row['emailUsers'];
+                    $_SESSION['userType'] = $row['userType']; 
 
+                    // Successful login, now we need to reload the nav
+                    header("Location: ../login.php?login=success"); 
+                    exit();
                 }
+            } else {
+                header("Location: ../login.php?error=nouser");
+                exit();
             }
         }
-    } 
-    
-}
-else {
-        header("Location: ../index.php");
-        exit();
     }
+} else {
+    header("Location: ../login.php");
+    exit();
+}

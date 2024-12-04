@@ -22,7 +22,7 @@
 }
 
 .container .top {
-    height: 80%;
+    height: 65%;
     width: 100%;
     background: no-repeat center center;
     background-size: 100%;
@@ -34,6 +34,13 @@
 
 .containerCap .top {
     background-image: url('images/CAP3D.png');
+}
+.containerNoseTrim .top {
+    background-image: url('images/NoseTrim.png');
+}
+
+.containerBalm .top {
+    background-image: url('images/BeardBalm3D.png');
 }
 
 .container .bottom {

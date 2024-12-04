@@ -18,7 +18,7 @@
 
 <body>
   <?php
-include_once 'nav.php';
+include_once 'login-system/nav.php';
 ?>
 
   <section id="hero">
@@ -26,7 +26,7 @@ include_once 'nav.php';
       <h1>Patron Presents...</h1>
       <h2 style="color: white;">Barber Cap</h2>
       <p>Say goodbye to bad hair days</p>
-      <a href="buy.html" class="cta-btn">Book a partnership or buy individual subscription</a>
+      <a href="signup.php" class="cta-btn">Create an account to start shopping our products</a>
     </div>
     <img src="images/hero-image.jpg" alt="" class="hero-image">
   </section>
