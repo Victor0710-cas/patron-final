@@ -19,7 +19,7 @@
 
     <!-- External Stylesheets -->
     <link rel="stylesheet" href="buy.css">
-    <link rel="stylesheet" href="test-buy2.css">
+    <link rel="stylesheet" href="test-buyy5.css">
 
 
     <!-- Additional Styling for Specific Page -->
@@ -45,257 +45,169 @@
     <div class="row">
         <div class="col">
             <div class="wrapper">
-                <div class="container">
+                <div class="container containerTrimPro ">
                     <div class="top"></div>
                     <div class="bottom">
                         <div class="left">
                             <div class="details">
-                                <h1>TrimProX</h1>
-                                <p>£250</p>
+                                <h2>TrimProX</h2>
+                                <p>$89.99</p>
                             </div>
                             <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
                         </div>
-                        <div class="right">
-                            <div class="done"><i class="material-icons">done</i></div>
-                            <div class="details">
-                                <h1>Chair</h1>
-                                <p>Added to your cart</p>
-                            </div>
-                            <div class="remove"><i class="material-icons">clear</i></div>
+                    </div>
+                    <div class="inside">
+                        <div class="icon"><i class="material-icons">info_outline</i></div>
+                        <div class="contents">
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Height</th>
+                                </tr>
+                                <tr>
+                                    <td>3000mm</td>
+                                    <td>4000mm</td>
+                                </tr>
+                                <tr>
+                                    <th>Something</th>
+                                    <th>Something</th>
+                                </tr>
+                                <tr>
+                                    <td>200mm</td>
+                                    <td>200mm</td>
+                                </tr>
+                                <tr>
+                                    <th>Something</th>
+                                    <th>Something</th>
+                                </tr>
+                                <tr>
+                                    <td>200mm</td>
+                                    <td>200mm</td>
+                                </tr>
+                                <tr>
+                                    <th>Something</th>
+                                    <th>Something</th>
+                                </tr>
+                                <tr>
+                                    <td>200mm</td>
+                                    <td>200mm</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
-                <div class="inside">
-                    <div class="icon"><i class="material-icons">info_outline</i></div>
-                    <div class="contents">
-                        <table>
-                            <tr>
-                                <th>Width</th>
-                                <th>Height</th>
-                            </tr>
-                            <tr>
-                                <td>3000mm</td>
-                                <td>4000mm</td>
-                            </tr>
-                            <tr>
-                                <th>Something</th>
-                                <th>Something</th>
-                            </tr>
-                            <tr>
-                                <td>200mm</td>
-                                <td>200mm</td>
-                            </tr>
-                            <tr>
-                                <th>Something</th>
-                                <th>Something</th>
-                            </tr>
-                            <tr>
-                                <td>200mm</td>
-                                <td>200mm</td>
-                            </tr>
-                            <tr>
-                                <th>Something</th>
-                                <th>Something</th>
-                            </tr>
-                            <tr>
-                                <td>200mm</td>
-                                <td>200mm</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
+            </div> <!-- Add more product cards if necessary -->
         </div>
         <div class="col">
             <div class="wrapper">
-                <div class="container">
+                <div class="container containerTrimPro ">
                     <div class="top"></div>
                     <div class="bottom">
                         <div class="left">
                             <div class="details">
-                                <h1>Chair</h1>
-                                <p>£250</p>
+                                <h3>LuxeTrim Duo</h3>
+                                <p>$89.99</p>
                             </div>
                             <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
                         </div>
-                        <div class="right">
-                            <div class="done"><i class="material-icons">done</i></div>
-                            <div class="details">
-                                <h1>Chair</h1>
-                                <p>Added to your cart</p>
-                            </div>
-                            <div class="remove"><i class="material-icons">clear</i></div>
+                    </div>
+                    <div class="inside">
+                        <div class="icon"><i class="material-icons">info_outline</i></div>
+                        <div class="contents">
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Height</th>
+                                </tr>
+                                <tr>
+                                    <td>3000mm</td>
+                                    <td>4000mm</td>
+                                </tr>
+                                <tr>
+                                    <th>Something</th>
+                                    <th>Something</th>
+                                </tr>
+                                <tr>
+                                    <td>200mm</td>
+                                    <td>200mm</td>
+                                </tr>
+                                <tr>
+                                    <th>Something</th>
+                                    <th>Something</th>
+                                </tr>
+                                <tr>
+                                    <td>200mm</td>
+                                    <td>200mm</td>
+                                </tr>
+                                <tr>
+                                    <th>Something</th>
+                                    <th>Something</th>
+                                </tr>
+                                <tr>
+                                    <td>200mm</td>
+                                    <td>200mm</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
-                <div class="inside">
-                    <div class="icon"><i class="material-icons">info_outline</i></div>
-                    <div class="contents">
-                        <table>
-                            <tr>
-                                <th>Width</th>
-                                <th>Height</th>
-                            </tr>
-                            <tr>
-                                <td>3000mm</td>
-                                <td>4000mm</td>
-                            </tr>
-                            <tr>
-                                <th>Something</th>
-                                <th>Something</th>
-                            </tr>
-                            <tr>
-                                <td>200mm</td>
-                                <td>200mm</td>
-                            </tr>
-                            <tr>
-                                <th>Something</th>
-                                <th>Something</th>
-                            </tr>
-                            <tr>
-                                <td>200mm</td>
-                                <td>200mm</td>
-                            </tr>
-                            <tr>
-                                <th>Something</th>
-                                <th>Something</th>
-                            </tr>
-                            <tr>
-                                <td>200mm</td>
-                                <td>200mm</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
+            </div> <!-- Add more product cards if necessary -->
         </div>
         <div class="col">
             <div class="wrapper">
-                <div class="container">
+                <div class="container containerCap ">
                     <div class="top"></div>
                     <div class="bottom">
                         <div class="left">
                             <div class="details">
-                                <h1>Chair</h1>
-                                <p>£250</p>
+                                <h2>BarberCap</h2>
+                                <p>$249.99</p>
                             </div>
                             <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
                         </div>
-                        <div class="right">
-                            <div class="done"><i class="material-icons">done</i></div>
-                            <div class="details">
-                                <h1>Chair</h1>
-                                <p>Added to your cart</p>
-                            </div>
-                            <div class="remove"><i class="material-icons">clear</i></div>
+                    </div>
+                    <div class="inside">
+                        <div class="icon"><i class="material-icons">info_outline</i></div>
+                        <div class="contents">
+                            <table>
+                                <tr>
+                                    <th>Width</th>
+                                    <th>Height</th>
+                                </tr>
+                                <tr>
+                                    <td>3000mm</td>
+                                    <td>4000mm</td>
+                                </tr>
+                                <tr>
+                                    <th>Something</th>
+                                    <th>Something</th>
+                                </tr>
+                                <tr>
+                                    <td>200mm</td>
+                                    <td>200mm</td>
+                                </tr>
+                                <tr>
+                                    <th>Something</th>
+                                    <th>Something</th>
+                                </tr>
+                                <tr>
+                                    <td>200mm</td>
+                                    <td>200mm</td>
+                                </tr>
+                                <tr>
+                                    <th>Something</th>
+                                    <th>Something</th>
+                                </tr>
+                                <tr>
+                                    <td>200mm</td>
+                                    <td>200mm</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
-                <div class="inside">
-                    <div class="icon"><i class="material-icons">info_outline</i></div>
-                    <div class="contents">
-                        <table>
-                            <tr>
-                                <th>Width</th>
-                                <th>Height</th>
-                            </tr>
-                            <tr>
-                                <td>3000mm</td>
-                                <td>4000mm</td>
-                            </tr>
-                            <tr>
-                                <th>Something</th>
-                                <th>Something</th>
-                            </tr>
-                            <tr>
-                                <td>200mm</td>
-                                <td>200mm</td>
-                            </tr>
-                            <tr>
-                                <th>Something</th>
-                                <th>Something</th>
-                            </tr>
-                            <tr>
-                                <td>200mm</td>
-                                <td>200mm</td>
-                            </tr>
-                            <tr>
-                                <th>Something</th>
-                                <th>Something</th>
-                            </tr>
-                            <tr>
-                                <td>200mm</td>
-                                <td>200mm</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
+            </div> <!-- Add more product cards if necessary -->
         </div>
-        <div class="col">
-            <div class="wrapper">
-                <div class="container">
-                    <div class="top"></div>
-                    <div class="bottom">
-                        <div class="left">
-                            <div class="details">
-                                <h1>Chair</h1>
-                                <p>£250</p>
-                            </div>
-                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
-                        </div>
-                        <div class="right">
-                            <div class="done"><i class="material-icons">done</i></div>
-                            <div class="details">
-                                <h1>Chair</h1>
-                                <p>Added to your cart</p>
-                            </div>
-                            <div class="remove"><i class="material-icons">clear</i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="inside">
-                    <div class="icon"><i class="material-icons">info_outline</i></div>
-                    <div class="contents">
-                        <table>
-                            <tr>
-                                <th>Width</th>
-                                <th>Height</th>
-                            </tr>
-                            <tr>
-                                <td>3000mm</td>
-                                <td>4000mm</td>
-                            </tr>
-                            <tr>
-                                <th>Something</th>
-                                <th>Something</th>
-                            </tr>
-                            <tr>
-                                <td>200mm</td>
-                                <td>200mm</td>
-                            </tr>
-                            <tr>
-                                <th>Something</th>
-                                <th>Something</th>
-                            </tr>
-                            <tr>
-                                <td>200mm</td>
-                                <td>200mm</td>
-                            </tr>
-                            <tr>
-                                <th>Something</th>
-                                <th>Something</th>
-                            </tr>
-                            <tr>
-                                <td>200mm</td>
-                                <td>200mm</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Add more product cards if necessary -->
     </div>
 
 
@@ -312,15 +224,7 @@
         integrity="sha384-o+pMzZnY0lhgExbD1slOdcAA55ND6LtK5k2xHpyPQpykPd7NJ6Kk8k3KDdKGjig0" crossorigin="anonymous">
     </script>
 
-    <script>
-        $('.buy').click(function () {
-            $(this).closest('.bottom').addClass("clicked");
-        });
 
-        $('.remove').click(function () {
-            $(this).closest('.bottom').removeClass("clicked");
-        });
-    </script>
 </body>
 
 </html>

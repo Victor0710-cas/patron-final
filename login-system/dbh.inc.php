@@ -2,7 +2,7 @@
 $dbServername = "localhost";
 $dbUsername = "root";
 $dbPassword = "";
-$dbName = "patronusers";
+$dbName = "PatronProducts";
 
 $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
 

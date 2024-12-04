@@ -30,7 +30,8 @@
         /* Cart Styles */
         .cart-container {
             position: fixed;
-            top: 80px; /* Adjust this if navbar height changes */
+            top: 80px;
+            /* Adjust this if navbar height changes */
             right: 20px;
             z-index: 1000;
         }
@@ -128,19 +129,20 @@
     <!-- Navbar -->
     <?php include_once 'nav.php'; ?>
 
-    <!-- Sticky Cart Icon -->
-    <div class="cart-container">
-        <div class="cart-icon" id="cartIcon">
-            <span id="cartItemCount">0</span>
-            <i class="material-icons">shopping_cart</i>
-        </div>
-        <div class="cart-details" id="cartDetails">
-            <div class="cart-header">Your Cart</div>
-            <ul class="cart-items"></ul>
-            <div class="cart-total">Total: £0</div>
-            <button class="checkout-btn">Checkout</button>
-        </div>
+   <!-- Sticky Cart Icon -->
+<div class="cart-container">
+    <div class="cart-icon" id="cartIcon">
+        <span id="cartItemCount">0</span>
+        <i class="material-icons">shopping_cart</i>
     </div>
+    <div class="cart-details" id="cartDetails">
+        <div class="cart-header">Your Cart</div>
+        <ul class="cart-items"></ul>
+        <div class="cart-total">Total: £0</div>
+        <a href="checkoutinfo.php" class="checkout-btn">Checkout</a>
+    </div>
+</div>
+
 
     <!-- Header Section -->
     <section class="buy-header text-center py-4">
@@ -153,12 +155,12 @@
         <!-- Product Cards -->
         <div class="col">
             <div class="wrapper">
-                <div class="container">
+                <div class="container containerBarber">
                     <div class="top"></div>
                     <div class="bottom">
                         <div class="left">
                             <div class="details">
-                                <h1>Chair</h1>
+                                <h1>Barber Cap</h1>
                                 <p>6999</p>
                             </div>
                             <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
@@ -166,7 +168,7 @@
                         <div class="right">
                             <div class="done"><i class="material-icons">done</i></div>
                             <div class="details">
-                                <h1>Chair</h1>
+                                <h1>TrimPro4X</h1>
                                 <p>Added to your cart</p>
                             </div>
                             <div class="remove"><i class="material-icons">clear</i></div>
@@ -197,7 +199,7 @@
                     <div class="bottom">
                         <div class="left">
                             <div class="details">
-                                <h1>Chair</h1>
+                                <h1>TrimPro4X</h1>
                                 <p>6999</p>
                             </div>
                             <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
@@ -205,7 +207,7 @@
                         <div class="right">
                             <div class="done"><i class="material-icons">done</i></div>
                             <div class="details">
-                                <h1>Chair</h1>
+                                <h1>LuxeTrim Duo</h1>
                                 <p>Added to your cart</p>
                             </div>
                             <div class="remove"><i class="material-icons">clear</i></div>
@@ -236,7 +238,7 @@
                     <div class="bottom">
                         <div class="left">
                             <div class="details">
-                                <h1>Chair</h1>
+                                <h1>LuxeTrim Duo</h1>
                                 <p>6999</p>
                             </div>
                             <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
@@ -244,46 +246,7 @@
                         <div class="right">
                             <div class="done"><i class="material-icons">done</i></div>
                             <div class="details">
-                                <h1>Chair</h1>
-                                <p>Added to your cart</p>
-                            </div>
-                            <div class="remove"><i class="material-icons">clear</i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="inside">
-                    <div class="icon"><i class="material-icons">info_outline</i></div>
-                    <div class="contents">
-                        <table>
-                            <tr>
-                                <th>Width</th>
-                                <th>Height</th>
-                            </tr>
-                            <tr>
-                                <td>3000mm</td>
-                                <td>4000mm</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="wrapper">
-                <div class="container">
-                    <div class="top"></div>
-                    <div class="bottom">
-                        <div class="left">
-                            <div class="details">
-                                <h1>Chair</h1>
-                                <p>6999</p>
-                            </div>
-                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
-                        </div>
-                        <div class="right">
-                            <div class="done"><i class="material-icons">done</i></div>
-                            <div class="details">
-                                <h1>Chair</h1>
+                                <h1>UNCS Hair Oil</h1>
                                 <p>Added to your cart</p>
                             </div>
                             <div class="remove"><i class="material-icons">clear</i></div>
@@ -315,12 +278,12 @@
         <!-- Product Cards -->
         <div class="col">
             <div class="wrapper">
-                <div class="container">
+                <div class="container containerBarber">
                     <div class="top"></div>
                     <div class="bottom">
                         <div class="left">
                             <div class="details">
-                                <h1>Chair</h1>
+                                <h1>Barber Cap</h1>
                                 <p>6999</p>
                             </div>
                             <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
@@ -328,7 +291,7 @@
                         <div class="right">
                             <div class="done"><i class="material-icons">done</i></div>
                             <div class="details">
-                                <h1>Chair</h1>
+                                <h1>TrimPro4X</h1>
                                 <p>Added to your cart</p>
                             </div>
                             <div class="remove"><i class="material-icons">clear</i></div>
@@ -359,7 +322,7 @@
                     <div class="bottom">
                         <div class="left">
                             <div class="details">
-                                <h1>Chair</h1>
+                                <h1>TrimPro4X</h1>
                                 <p>6999</p>
                             </div>
                             <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
@@ -367,7 +330,7 @@
                         <div class="right">
                             <div class="done"><i class="material-icons">done</i></div>
                             <div class="details">
-                                <h1>Chair</h1>
+                                <h1>LuxeTrim Duo</h1>
                                 <p>Added to your cart</p>
                             </div>
                             <div class="remove"><i class="material-icons">clear</i></div>
@@ -398,7 +361,7 @@
                     <div class="bottom">
                         <div class="left">
                             <div class="details">
-                                <h1>Chair</h1>
+                                <h1>LuxeTrim Duo</h1>
                                 <p>6999</p>
                             </div>
                             <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
@@ -406,46 +369,7 @@
                         <div class="right">
                             <div class="done"><i class="material-icons">done</i></div>
                             <div class="details">
-                                <h1>Chair</h1>
-                                <p>Added to your cart</p>
-                            </div>
-                            <div class="remove"><i class="material-icons">clear</i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="inside">
-                    <div class="icon"><i class="material-icons">info_outline</i></div>
-                    <div class="contents">
-                        <table>
-                            <tr>
-                                <th>Width</th>
-                                <th>Height</th>
-                            </tr>
-                            <tr>
-                                <td>3000mm</td>
-                                <td>4000mm</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="wrapper">
-                <div class="container">
-                    <div class="top"></div>
-                    <div class="bottom">
-                        <div class="left">
-                            <div class="details">
-                                <h1>Chair</h1>
-                                <p>6999</p>
-                            </div>
-                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
-                        </div>
-                        <div class="right">
-                            <div class="done"><i class="material-icons">done</i></div>
-                            <div class="details">
-                                <h1>Chair</h1>
+                                <h1>UNCS Hair Oil</h1>
                                 <p>Added to your cart</p>
                             </div>
                             <div class="remove"><i class="material-icons">clear</i></div>
@@ -473,71 +397,237 @@
         <!-- More Product Cards as needed -->
         <!-- Repeat similar blocks for more products -->
     </div>
-    <!-- Footer -->
-    <footer class="text-center py-3">
-        <a href="https://stylustechnepal.com" target="_blank"></a>
-    </footer>
+    <div class="row">
+        <!-- Product Cards -->
+        <div class="col">
+            <div class="wrapper">
+                <div class="container containerBarber">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h1>Barber Cap</h1>
+                                <p>6999</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                        <div class="right">
+                            <div class="done"><i class="material-icons">done</i></div>
+                            <div class="details">
+                                <h1>TrimPro4X</h1>
+                                <p>Added to your cart</p>
+                            </div>
+                            <div class="remove"><i class="material-icons">clear</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <div class="icon"><i class="material-icons">info_outline</i></div>
+                    <div class="contents">
+                        <table>
+                            <tr>
+                                <th>Width</th>
+                                <th>Height</th>
+                            </tr>
+                            <tr>
+                                <td>3000mm</td>
+                                <td>4000mm</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h1>TrimPro4X</h1>
+                                <p>6999</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                        <div class="right">
+                            <div class="done"><i class="material-icons">done</i></div>
+                            <div class="details">
+                                <h1>LuxeTrim Duo</h1>
+                                <p>Added to your cart</p>
+                            </div>
+                            <div class="remove"><i class="material-icons">clear</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <div class="icon"><i class="material-icons">info_outline</i></div>
+                    <div class="contents">
+                        <table>
+                            <tr>
+                                <th>Width</th>
+                                <th>Height</th>
+                            </tr>
+                            <tr>
+                                <td>3000mm</td>
+                                <td>4000mm</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h1>LuxeTrim Duo</h1>
+                                <p>6999</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                        <div class="right">
+                            <div class="done"><i class="material-icons">done</i></div>
+                            <div class="details">
+                                <h1>UNCS Hair Oil</h1>
+                                <p>Added to your cart</p>
+                            </div>
+                            <div class="remove"><i class="material-icons">clear</i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inside">
+                    <div class="icon"><i class="material-icons">info_outline</i></div>
+                    <div class="contents">
+                        <table>
+                            <tr>
+                                <th>Width</th>
+                                <th>Height</th>
+                            </tr>
+                            <tr>
+                                <td>3000mm</td>
+                                <td>4000mm</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
-        integrity="sha384-o+pMzZnY0lhgExbD1slOdcAA55ND6LtK5k2xHpyPQpykPd7NJ6Kk8k3KDdKGjig0" crossorigin="anonymous">
-    </script>
+        <!-- More Product Cards as needed -->
+        <!-- Repeat similar blocks for more products -->
+    </div>
+    
 
-    <script>
-        const cart = [];
+                    <!-- More Product Cards as needed -->
+                    <!-- Repeat similar blocks for more products -->
+                </div>
+                <!-- Footer -->
+                <footer class="text-center py-3">
+                    <a href="https://stylustechnepal.com" target="_blank"></a>
+                </footer>
 
-        // Update the cart UI
-        const updateCart = () => {
-            const cartItemsContainer = $('.cart-items');
-            const cartTotal = $('.cart-total');
-            const cartItemCount = $('#cartItemCount');
-            cartItemsContainer.empty();
-            let total = 0;
+                <!-- Scripts -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                    crossorigin="anonymous">
+                </script>
+                <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+                    integrity="sha384-o+pMzZnY0lhgExbD1slOdcAA55ND6LtK5k2xHpyPQpykPd7NJ6Kk8k3KDdKGjig0"
+                    crossorigin="anonymous">
+                </script>
 
-            cart.forEach((item, index) => {
-                total += item.price;
-                cartItemsContainer.append(`
+                <script>
+                    const cart = [];
+
+                    // Update the cart UI
+                    const updateCart = () => {
+                        const cartItemsContainer = $('.cart-items');
+                        const cartTotal = $('.cart-total');
+                        const cartItemCount = $('#cartItemCount');
+                        cartItemsContainer.empty();
+                        let total = 0;
+
+                        cart.forEach((item, index) => {
+                            total += item.price;
+                            cartItemsContainer.append(`
                     <li class="cart-item">
                         <p>${item.name} - £${item.price}</p>
                         <span class="remove-item" data-index="${index}">&times;</span>
                     </li>
                 `);
-            });
+                        });
 
-            cartTotal.text(`Total: £${total}`);
-            cartItemCount.text(cart.length);
-        };
+                        cartTotal.text(`Total: £${total}`);
+                        cartItemCount.text(cart.length);
+                    };
 
-        // Add product to cart
-        $('.buy').click(function () {
-            const productName = $(this).siblings('.details').find('h1').text();
-            const productPrice = parseInt($(this).siblings('.details').find('p').text().replace('£', ''));
-            cart.push({ name: productName, price: productPrice });
-            updateCart();
-        });
+                    // Add product to cart
+                    $('.buy').click(function () {
+                        const productName = $(this).siblings('.details').find('h1').text();
+                        const productPrice = parseInt($(this).siblings('.details').find('p').text().replace('£',
+                            ''));
+                        cart.push({
+                            name: productName,
+                            price: productPrice
+                        });
+                        updateCart();
+                    });
 
-        // Remove product from cart
-        $(document).on('click', '.remove-item', function () {
-            const index = $(this).data('index');
-            cart.splice(index, 1);
-            updateCart();
-        });
+                    // Remove product from cart
+                    $(document).on('click', '.remove-item', function () {
+                        const index = $(this).data('index');
+                        cart.splice(index, 1);
+                        updateCart();
+                    });
 
-        // Toggle cart details visibility
-        $('#cartIcon').click(function () {
-            $('#cartDetails').toggleClass('active');
-        });
+                    // Toggle cart details visibility
+                    $('#cartIcon').click(function () {
+                        $('#cartDetails').toggleClass('active');
+                    });
 
-        // Close cart if clicked outside
-        $(document).click(function (event) {
-            if (!$(event.target).closest('.cart-container').length) {
-                $('#cartDetails').removeClass('active');
-            }
-        });
-    </script>
+                    // Close cart if clicked outside
+                    $(document).click(function (event) {
+                        if (!$(event.target).closest('.cart-container').length) {
+                            $('#cartDetails').removeClass('active');
+                        }
+                    });
+
+
+
+
+
+                    const updateCart = () => {
+    const cartItemsContainer = $('.cart-items');
+    const cartTotal = $('.cart-total');
+    const cartItemCount = $('#cartItemCount');
+    cartItemsContainer.empty();
+    let total = 0;
+
+    cart.forEach((item, index) => {
+        total += item.price;
+        cartItemsContainer.append(`
+            <li class="cart-item">
+                <p>${item.name} - £${item.price}</p>
+                <span class="remove-item" data-index="${index}">&times;</span>
+            </li>
+        `);
+    });
+
+    cartTotal.text(`Total: £${total}`);
+    cartItemCount.text(cart.length);
+
+    // Save the cart to local storage
+    localStorage.setItem('cart', JSON.stringify(cart));
+    localStorage.setItem('total', total);
+};
+
+
+
+                </script>
 </body>
 
 </html>

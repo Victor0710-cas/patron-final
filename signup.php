@@ -148,7 +148,7 @@
     </div>
     <ul>
       <li><a href="index.php">home</a></li>
-      <li><a href="#about">about</a></li>
+      <li><a href="index.php#about">about</a></li>
       <li><a href="contact.php">contact</a></li>
       <li><a href="buy.php">buy</a></li>
       <li><a href="login.php">log in</a></li>
