@@ -170,7 +170,7 @@ $account_type = isset($_SESSION['userType']) ? $_SESSION['userType'] : ''; // Re
     </section>
 
     <!-- Main Product Grid -->
-    <div class="row">
+    
 
         <!-- Individual -->
         <?php if ($account_type === 'Individual' || $account_type === 'premium'): ?>
@@ -254,7 +254,7 @@ $account_type = isset($_SESSION['userType']) ? $_SESSION['userType'] : ''; // Re
                         <div class="bottom">
                             <div class="left">
                                 <div class="details">
-                                    <h2>TrimProX</h2>
+                                    <h2>Unc's Beard Balm</h2>
                                     <p>$89.99</p>
                                 </div>
                                 <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
@@ -273,12 +273,12 @@ $account_type = isset($_SESSION['userType']) ? $_SESSION['userType'] : ''; // Re
             </div>
             <div class="col">
                 <div class="wrapper">
-                    <div class="container containerNoseTrim ">
+                    <div class="container containerGel ">
                         <div class="top"></div>
                         <div class="bottom">
                             <div class="left">
                                 <div class="details">
-                                    <h3>LuxeTrim Duo</h3>
+                                    <h3>Unc's Shaving Gel</h3>
                                     <p>$89.99</p>
                                 </div>
                                 <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
@@ -296,12 +296,84 @@ $account_type = isset($_SESSION['userType']) ? $_SESSION['userType'] : ''; // Re
             </div>
             <div class="col">
                 <div class="wrapper">
-                    <div class="container containerCap ">
+                    <div class="container containerBrush">
                         <div class="top"></div>
                         <div class="bottom">
                             <div class="left">
                                 <div class="details">
-                                    <h2>BarberCap</h2>
+                                    <h2>Beard Brush</h2>
+                                    <p>$249.99</p>
+                                </div>
+                                <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="material-icons">info_outline</i></div>
+                            <div class="contents">
+                                <h3>The magnum opus of our company. Equip the Barbercap to experience a variety of hair
+                                    styles. </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Add more product cards if necessary -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="wrapper">
+                    <div class="container containerCream ">
+                        <div class="top"></div>
+                        <div class="bottom">
+                            <div class="left">
+                                <div class="details">
+                                    <h2>Facial Moisurizing Cream</h2>
+                                    <p>$89.99</p>
+                                </div>
+                                <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="material-icons">info_outline</i></div>
+                            <div class="contents">
+                                <h3>Advance cutting technology razor that senses your mood through subtle skin and pulse
+                                    analysis, then adjusts its cutting pressure and speed for a relaxing experience.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Add more product cards if necessary -->
+            </div>
+            <div class="col">
+                <div class="wrapper">
+                    <div class="container containerHairOil ">
+                        <div class="top"></div>
+                        <div class="bottom">
+                            <div class="left">
+                                <div class="details">
+                                    <h3>Unc's Hair Oil</h3>
+                                    <p>$89.99</p>
+                                </div>
+                                <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                            </div>
+                        </div>
+                        <div class="inside">
+                            <div class="icon"><i class="material-icons">info_outline</i></div>
+                            <div class="contents">
+                                <h3>Uses advanced AI to create a 3D map of your nasal passages and trims every hair
+                                    without missing a spot—even in hard-to-reach areas.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Add more product cards if necessary -->
+            </div>
+            <div class="col">
+                <div class="wrapper">
+                    <div class="container containerBeardOil">
+                        <div class="top"></div>
+                        <div class="bottom">
+                            <div class="left">
+                                <div class="details">
+                                    <h2>Unc's Beard Oil</h2>
                                     <p>$249.99</p>
                                 </div>
                                 <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
@@ -374,7 +446,7 @@ $account_type = isset($_SESSION['userType']) ? $_SESSION['userType'] : ''; // Re
         <?php endif; ?>
 
 
-    </div>
+
     <?php endif; ?>
 
     <!-- Footer -->

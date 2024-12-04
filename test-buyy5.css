@@ -42,6 +42,21 @@
 .containerBalm .top {
     background-image: url('images/BeardBalm3D.png');
 }
+.containerCream .top {
+    background-image: url('images/CreamModel.png');
+}
+.containerGel .top {
+    background-image: url('images/GelModel.png');
+}
+.containerHairOil .top {
+    background-image: url('images/HairOilModel.png');
+}
+.containerBeardOil  .top {
+    background-image: url('images/BeardOilModel.png');
+}
+.containerBrush .top {
+    background-image: url('images/BrushModel.png');
+}
 
 .container .bottom {
     width: 200%;
