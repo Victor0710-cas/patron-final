@@ -7,8 +7,10 @@
   <title>Patron Men's Grooming</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="nav.css">
-  <link rel="icon" type="image/x-icon" href="images/short-logo.png">
+  <link rel="icon" type="image/x-icon" href="images/white-short.png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 <style>
   .main-block {
@@ -161,16 +163,16 @@
   }
 </style>
 
-<body class="signup">
+<body class="signup container-fluid">
   <?php
 include_once 'login-system/nav.php';
 ?>
   <br>
   <br>
 
-  <div class="main-block">
-    <div class="left-part">
-      <i class="fas fa-graduation-cap"></i>
+  <div class="main-block container-fluid">
+    <div class="left-part container-fluid" >
+      <i class="fas"></i>
       <h1>Signup for a Patron Account</h1>
       <p>Choose from an individual, commercial, or partnership account</p>
       <div class="btn-group">
@@ -179,7 +181,7 @@ include_once 'login-system/nav.php';
       </div>
     </div>
 
-    <form action="login-system/signup.inc.php" method="POST">
+    <form class="container-fluid" action="login-system/signup.inc.php" method="POST">
       <div class="title">
         <i class="fas fa-pencil-alt"></i>
 
@@ -233,6 +235,8 @@ include_once 'login-system/nav.php';
       <button type="submit" name="signup-submit">Submit</button>
     </form>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 

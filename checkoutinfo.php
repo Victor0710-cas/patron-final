@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="images/white-short.png">
+
   <title>Payment Form</title>
   <style>
     @import url('https://fonts.googleapis.com/css?family=Work+Sans');

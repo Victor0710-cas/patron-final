@@ -7,7 +7,7 @@
     <title>Patron Men's Grooming</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/short-logo.png">
+    <link rel="icon" type="image/x-icon" href="images/white-short.png">
 
     <!-- CSS Files -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"

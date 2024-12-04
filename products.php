@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ERROR);
+
 session_start();
 
 // Check if the user is logged in
@@ -15,17 +17,19 @@ $account_type = isset($_SESSION['userType']) ? $_SESSION['userType'] : ''; // Re
     <title>Patron Men's Grooming</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/short-logo.png">
+    <link rel="icon" type="image/x-icon" href="images/white-short.png">
 
     <!-- CSS Files -->
+    
+    <!-- External Stylesheets -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!-- External Stylesheets -->
-    <link rel="stylesheet" href="buy.css">
     <link rel="stylesheet" href="test-buyy5.css">
+
+    <link rel="stylesheet" href="buy.css">
 
     <style>
         /* Cart Styles */
@@ -128,6 +132,10 @@ $account_type = isset($_SESSION['userType']) ? $_SESSION['userType'] : ''; // Re
             text-align: center;
             margin-top: 20px;
         }
+
+        h3{
+            color: #FFFFFF
+        }
     </style>
 
     <?php
@@ -137,7 +145,7 @@ $account_type = isset($_SESSION['userType']) ? $_SESSION['userType'] : ''; // Re
     ?>
 </head>
 
-<body class="container">
+<body class="container-fluid">
 
     <!-- Navbar -->
     <?php include_once 'login-system/nav.php'; ?>
@@ -164,244 +172,97 @@ $account_type = isset($_SESSION['userType']) ? $_SESSION['userType'] : ''; // Re
     </div>
 
     <!-- Header Section -->
-    <section class="buy-header text-center py-4">
+    <section class="buy-header text-center py-4 container-fluid">
         <h2>Buy Now</h2>
         <h3>Discover Our Premium Products</h3>
     </section>
 
     <!-- Main Product Grid -->
-    
 
-        <!-- Individual -->
-        <?php if ($account_type === 'Individual' || $account_type === 'premium'): ?>
-        <div class="row">
-            <div class="col">
-                <div class="wrapper">
-                    <div class="container containerTrimPro ">
-                        <div class="top"></div>
-                        <div class="bottom">
-                            <div class="left">
-                                <div class="details">
-                                    <h2>TrimProX</h2>
-                                    <p>$89.99</p>
-                                </div>
-                                <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
-                            </div>
-                        </div>
-                        <div class="inside">
-                            <div class="icon"><i class="material-icons">info_outline</i></div>
-                            <div class="contents">
-                                <h3>Advance cutting technology razor that senses your mood through subtle skin and pulse
-                                    analysis, then adjusts its cutting pressure and speed for a relaxing experience.
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- Add more product cards if necessary -->
-            </div>
-            <div class="col">
-                <div class="wrapper">
-                    <div class="container containerNoseTrim ">
-                        <div class="top"></div>
-                        <div class="bottom">
-                            <div class="left">
-                                <div class="details">
-                                    <h3>LuxeTrim Duo</h3>
-                                    <p>$89.99</p>
-                                </div>
-                                <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
-                            </div>
-                        </div>
-                        <div class="inside">
-                            <div class="icon"><i class="material-icons">info_outline</i></div>
-                            <div class="contents">
-                                <h3>Uses advanced AI to create a 3D map of your nasal passages and trims every hair
-                                    without missing a spot—even in hard-to-reach areas.</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- Add more product cards if necessary -->
-            </div>
-            <div class="col">
-                <div class="wrapper">
-                    <div class="container containerCap ">
-                        <div class="top"></div>
-                        <div class="bottom">
-                            <div class="left">
-                                <div class="details">
-                                    <h2>BarberCap</h2>
-                                    <p>$249.99</p>
-                                </div>
-                                <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
-                            </div>
-                        </div>
-                        <div class="inside">
-                            <div class="icon"><i class="material-icons">info_outline</i></div>
-                            <div class="contents">
-                                <h3>The magnum opus of our company. Equip the Barbercap to experience a variety of hair
-                                    styles. </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- Add more product cards if necessary -->
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="wrapper">
-                    <div class="container containerBalm ">
-                        <div class="top"></div>
-                        <div class="bottom">
-                            <div class="left">
-                                <div class="details">
-                                    <h2>Unc's Beard Balm</h2>
-                                    <p>$89.99</p>
-                                </div>
-                                <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
-                            </div>
-                        </div>
-                        <div class="inside">
-                            <div class="icon"><i class="material-icons">info_outline</i></div>
-                            <div class="contents">
-                                <h3>Advance cutting technology razor that senses your mood through subtle skin and pulse
-                                    analysis, then adjusts its cutting pressure and speed for a relaxing experience.
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- Add more product cards if necessary -->
-            </div>
-            <div class="col">
-                <div class="wrapper">
-                    <div class="container containerGel ">
-                        <div class="top"></div>
-                        <div class="bottom">
-                            <div class="left">
-                                <div class="details">
-                                    <h3>Unc's Shaving Gel</h3>
-                                    <p>$89.99</p>
-                                </div>
-                                <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
-                            </div>
-                        </div>
-                        <div class="inside">
-                            <div class="icon"><i class="material-icons">info_outline</i></div>
-                            <div class="contents">
-                                <h3>Uses advanced AI to create a 3D map of your nasal passages and trims every hair
-                                    without missing a spot—even in hard-to-reach areas.</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- Add more product cards if necessary -->
-            </div>
-            <div class="col">
-                <div class="wrapper">
-                    <div class="container containerBrush">
-                        <div class="top"></div>
-                        <div class="bottom">
-                            <div class="left">
-                                <div class="details">
-                                    <h2>Beard Brush</h2>
-                                    <p>$249.99</p>
-                                </div>
-                                <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
-                            </div>
-                        </div>
-                        <div class="inside">
-                            <div class="icon"><i class="material-icons">info_outline</i></div>
-                            <div class="contents">
-                                <h3>The magnum opus of our company. Equip the Barbercap to experience a variety of hair
-                                    styles. </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- Add more product cards if necessary -->
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="wrapper">
-                    <div class="container containerCream ">
-                        <div class="top"></div>
-                        <div class="bottom">
-                            <div class="left">
-                                <div class="details">
-                                    <h2>Facial Moisurizing Cream</h2>
-                                    <p>$89.99</p>
-                                </div>
-                                <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
-                            </div>
-                        </div>
-                        <div class="inside">
-                            <div class="icon"><i class="material-icons">info_outline</i></div>
-                            <div class="contents">
-                                <h3>Advance cutting technology razor that senses your mood through subtle skin and pulse
-                                    analysis, then adjusts its cutting pressure and speed for a relaxing experience.
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- Add more product cards if necessary -->
-            </div>
-            <div class="col">
-                <div class="wrapper">
-                    <div class="container containerHairOil ">
-                        <div class="top"></div>
-                        <div class="bottom">
-                            <div class="left">
-                                <div class="details">
-                                    <h3>Unc's Hair Oil</h3>
-                                    <p>$89.99</p>
-                                </div>
-                                <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
-                            </div>
-                        </div>
-                        <div class="inside">
-                            <div class="icon"><i class="material-icons">info_outline</i></div>
-                            <div class="contents">
-                                <h3>Uses advanced AI to create a 3D map of your nasal passages and trims every hair
-                                    without missing a spot—even in hard-to-reach areas.</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- Add more product cards if necessary -->
-            </div>
-            <div class="col">
-                <div class="wrapper">
-                    <div class="container containerBeardOil">
-                        <div class="top"></div>
-                        <div class="bottom">
-                            <div class="left">
-                                <div class="details">
-                                    <h2>Unc's Beard Oil</h2>
-                                    <p>$249.99</p>
-                                </div>
-                                <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
-                            </div>
-                        </div>
-                        <div class="inside">
-                            <div class="icon"><i class="material-icons">info_outline</i></div>
-                            <div class="contents">
-                                <h3>The magnum opus of our company. Equip the Barbercap to experience a variety of hair
-                                    styles. </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- Add more product cards if necessary -->
-            </div>
-        </div>
-        <?php endif; ?>
 
-        <!-- Commercial -->
-        <?php if ($account_type === 'Commercial' || $account_type === 'free'): ?>
+    <!-- Individual -->
+    <?php if ($account_type === 'Individual' || $account_type === 'premium'): ?>
+    <div class="row container-fluid">
+        <div class="col ">
+            <div class="wrapper">
+                <div class="container containerTrimPro ">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h2>TrimProXPlus</h2>
+                                <p>$124.99</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                    </div>
+                    <div class="inside">
+                        <div class="icon"><i class="material-icons">info_outline</i></div>
+                        <div class="contents">
+                            <h3>Advance cutting technology razor that senses your mood through subtle skin and pulse
+                                analysis, then adjusts its cutting pressure and speed for a relaxing experience.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Add more product cards if necessary -->
+        </div>
         <div class="col">
             <div class="wrapper">
-                <div class="container containerNoseTrim">
+                <div class="container containerNoseTrim ">
                     <div class="top"></div>
                     <div class="bottom">
                         <div class="left">
                             <div class="details">
                                 <h3>LuxeTrim Duo</h3>
+                                <p>$124.99</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                    </div>
+                    <div class="inside">
+                        <div class="icon"><i class="material-icons">info_outline</i></div>
+                        <div class="contents">
+                            <h3>Uses advanced AI to create a 3D map of your nasal passages and trims every hair
+                                without missing a spot—even in hard-to-reach areas.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Add more product cards if necessary -->
+        </div>
+        <div class="col">
+            <div class="wrapper">
+                <div class="container containerCap ">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h2>BarberCapPlus</h2>
+                                <p>$499.99</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                    </div>
+                    <div class="inside">
+                        <div class="icon"><i class="material-icons">info_outline</i></div>
+                        <div class="contents">
+                            <h3>The magnum opus of our company. Equip the Barbercap to experience a variety of hair
+                                styles. </h3>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Add more product cards if necessary -->
+        </div>
+    </div>
+    <div class="row container-fluid">
+        <div class="col">
+            <div class="wrapper">
+                <div class="container containerBalm ">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h2>Unc's Beard Balm</h2>
                                 <p>$89.99</p>
                             </div>
                             <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
@@ -410,24 +271,24 @@ $account_type = isset($_SESSION['userType']) ? $_SESSION['userType'] : ''; // Re
                     <div class="inside">
                         <div class="icon"><i class="material-icons">info_outline</i></div>
                         <div class="contents">
-                            <h3>Uses advanced AI to create a 3D map of your nasal passages and trims every hair without
-                                missing a spot—even in hard-to-reach areas.</h3>
+                            <h3>
+                                Keep your beard in style longer by using our beard balm. This Balm comes directly from
+                                the fountain of youth to reduce graying
+                            </h3>
+
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> <!-- Add more product cards if necessary -->
         </div>
-        <?php endif; ?>
-        <!-- Partnership -->
-        <?php if ($account_type === 'Partnership' || $account_type === 'free'): ?>
-        <div class="col">
+        <div class="col ">
             <div class="wrapper">
-                <div class="container containerNoseTrim">
+                <div class="container containerGel ">
                     <div class="top"></div>
                     <div class="bottom">
                         <div class="left">
                             <div class="details">
-                                <h3>LuxeTrim Duo</h3>
+                                <h3>Unc's Shaving Gel</h3>
                                 <p>$89.99</p>
                             </div>
                             <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
@@ -436,14 +297,247 @@ $account_type = isset($_SESSION['userType']) ? $_SESSION['userType'] : ''; // Re
                     <div class="inside">
                         <div class="icon"><i class="material-icons">info_outline</i></div>
                         <div class="contents">
-                            <h3>Uses advanced AI to create a 3D map of your nasal passages and trims every hair without
-                                missing a spot—even in hard-to-reach areas.</h3>
+                            <h3>
+                                This shaving gel will leave your skin feeling smooth and refreshed. This shaving gel is
+                                proven to be non irritant
+                                and will not cause razor burn.
+                            </h3>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> <!-- Add more product cards if necessary -->
         </div>
-        <?php endif; ?>
+        <div class="col">
+            <div class="wrapper">
+                <div class="container containerBrush">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h2>Beard Brush</h2>
+                                <p>$249.99</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                    </div>
+                    <div class="inside">
+                        <div class="icon"><i class="material-icons">info_outline</i></div>
+                        <div class="contents">
+                            <h3>
+                                This beard brush is made from the finest materials and is designed to help you style
+                                your beard with ease, comfort, and cleanliness.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Add more product cards if necessary -->
+        </div>
+    </div>
+    <div class="row container-fluid">
+        <div class="col">
+            <div class="wrapper">
+                <div class="container containerCream ">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h2>Facial Moisurizing Cream</h2>
+                                <p>$89.99</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                    </div>
+                    <div class="inside">
+                        <div class="icon"><i class="material-icons">info_outline</i></div>
+                        <div class="contents">
+                            <h3>Give your face the nourishment it deserves with our rich and hydrating facial cream.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Add more product cards if necessary -->
+        </div>
+        <div class="col">
+            <div class="wrapper">
+                <div class="container containerHairOil ">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h3>Unc's Hair Oil</h3>
+                                <p>$89.99</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                    </div>
+                    <div class="inside">
+                        <div class="icon"><i class="material-icons">info_outline</i></div>
+                        <div class="contents">
+                            <h3>
+                                Our hair oil is the perfect blend of nourishment and shine. Pure and natural chemiicals
+                                that will leave your hair looking healthy and strong.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Add more product cards if necessary -->
+        </div>
+        <div class="col">
+            <div class="wrapper">
+                <div class="container containerBeardOil">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h2>Unc's Beard Oil</h2>
+                                <p>$249.99</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                    </div>
+                    <div class="inside">
+                        <div class="icon"><i class="material-icons">info_outline</i></div>
+                        <div class="contents">
+                            <h3>
+                                Nourish your Beard with our premium beard oil. Made with the finest natural ingredients.
+
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Add more product cards if necessary -->
+        </div>
+    </div>
+    <?php endif; ?>
+
+    <!-- Commercial -->
+    <?php if ($account_type === 'Commercial' || $account_type === 'free'): ?>
+
+    <div class="row container-fluid">
+        <div class="col">
+            <div class="wrapper">
+                <div class="container containerTrimPro ">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h2>TrimProXLite</h2>
+                                <p>$49.99</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                    </div>
+                    <div class="inside">
+                        <div class="icon"><i class="material-icons">info_outline</i></div>
+                        <div class="contents">
+                            <h3>Advance cutting technology razor that senses your mood through subtle skin and pulse
+                                analysis, then adjusts its cutting pressure and speed for a relaxing experience.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Add more product cards if necessary -->
+        </div>
+        <div class="col">
+            <div class="wrapper">
+                <div class="container containerCap ">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h2>BarberCapLite</h2>
+                                <p>$299.99</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                    </div>
+                    <div class="inside">
+                        <div class="icon"><i class="material-icons">info_outline</i></div>
+                        <div class="contents">
+                            <h3>The magnum opus of our company. Equip the Barbercap to experience a variety of hair
+                                styles. </h3>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Add more product cards if necessary -->
+        </div>
+    </div>
+    <?php endif; ?>
+    <!-- Partnership -->
+    <?php if ($account_type === 'Partnership' || $account_type === 'free'): ?>
+    <div class="row container-fluid" >
+        <div class="col">
+            <div class="wrapper">
+                <div class="container containerTrimPro ">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h2>TrimProX</h2>
+                                <p>$89.99</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                    </div>
+                    <div class="inside">
+                        <div class="icon"><i class="material-icons">info_outline</i></div>
+                        <div class="contents">
+                            <h3>Advance cutting technology razor that senses your mood through subtle skin and pulse
+                                analysis, then adjusts its cutting pressure and speed for a relaxing experience.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Add more product cards if necessary -->
+        </div>
+        <div class="col">
+            <div class="wrapper">
+                <div class="container containerNoseTrim ">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h3>LuxeTrim DuoLite</h3>
+                                <p>$89.99</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                    </div>
+                    <div class="inside">
+                        <div class="icon"><i class="material-icons">info_outline</i></div>
+                        <div class="contents">
+                            <h3>Uses advanced AI to create a 3D map of your nasal passages and trims every hair
+                                without missing a spot—even in hard-to-reach areas.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Add more product cards if necessary -->
+        </div>
+        <div class="col">
+            <div class="wrapper">
+                <div class="container containerCap ">
+                    <div class="top"></div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="details">
+                                <h2>BarberCap</h2>
+                                <p>$349.99</p>
+                            </div>
+                            <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        </div>
+                    </div>
+                    <div class="inside">
+                        <div class="icon"><i class="material-icons">info_outline</i></div>
+                        <div class="contents">
+                            <h3>The magnum opus of our company. Equip the Barbercap to experience a variety of hair
+                                styles. </h3>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Add more product cards if necessary -->
+        </div>
+    </div>
+    <?php endif; ?>
 
 
 
@@ -475,15 +569,23 @@ $account_type = isset($_SESSION['userType']) ? $_SESSION['userType'] : ''; // Re
 
             cart.forEach((item, index) => {
                 total += item.price;
-                cartItemsContainer.append(`
-                    <li class="cart-item">
-                        <p>${item.name} - £${item.price.toFixed(2)}</p>
-                        <span class="remove-item" data-index="${index}">&times;</span>
-                    </li>
-                `);
+                cartItemsContainer.append( <
+                    li class = "cart-item" >
+                    <
+                    p > $ {
+                        item.name
+                    } - £$ {
+                        item.price.toFixed(2)
+                    } < /p> <
+                    span class = "remove-item"
+                    data - index = "${index}" > & times; < /span> <
+                    /li>
+                );
             });
 
-            cartTotal.text(`Total: £${total.toFixed(2)}`);
+            cartTotal.text(Total: £$ {
+                total.toFixed(2)
+            });
             cartItemCount.text(cart.length);
 
             // Save the cart to local storage
@@ -527,6 +629,8 @@ $account_type = isset($_SESSION['userType']) ? $_SESSION['userType'] : ''; // Re
             updateCart();
         });
     </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
